@@ -359,10 +359,53 @@ position: relative !important;
 
 /* Contenerdor tres de imagenes */
 		.wrapper.img-one  {
-			background-image: -webkit-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("https://picjumbo.imgix.net/HNCK4536.jpg?q=40&w=1650&sharp=30");
-			background-image: -o-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("https://daks2k3a4ib2z.cloudfront.net/5658db85b2deead06a6a6390/565b9ac5b268b6860dd2769c_Banner-6.jpg");
-			background-image: linear-gradient(to left, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("https://picjumbo.imgix.net/HNCK4536.jpg?q=40&w=1650&sharp=30");
+			background-image: -webkit-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-2.jpg");
+			background-image: -o-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-2.jpg");
+			background-image: linear-gradient(to left, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-2.jpg");
 			background-position: 0px 0px, 50% 50%;
 			background-size: auto, cover;
 			background-attachment: scroll, fixed;
 		}
+
+
+/*Rombos */
+#rombo .contenido{
+  border-radius:10px;
+  background-color:rgb(60, 221, 185);
+  padding:0;
+  width:200px;
+  height:200px;
+  margin:auto;
+  text-align:center;
+    display:block;
+    border:5px solid white;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    transition: transform  0.1s cubic-bezier(0, 1.8, 1, 1.8);
+}
+#rombo {
+
+  padding:41.42px;
+  float:left;
+}
+#rombo .contenido:hover{
+  transform:rotate(45deg) scale(1.005) translateX(-0.5px);
+  background-color:rgb(20, 181, 145);
+  box-shadow:10px 10px 50px rgb(0, 161, 125) inset, -10px -10px 50px rgb(0, 161, 125) inset;
+}
+#rombo .contenido .texto {
+  border-radius:4px;
+ font-family: Verdana;
+  color:white;
+ position: relative;
+  overflow:hidden;
+  padding:20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  font-size:1vw;
+  text-transform:uppercase;
+
+}
