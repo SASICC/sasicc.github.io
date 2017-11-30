@@ -75,6 +75,24 @@
 		line-height: 1.5em;
 	}
 
+	.hollow-button {
+	    display: inline-block;
+	    margin-right: 10px;
+	    margin-left: 10px;
+	    padding: 10px 30px;
+	    border: 1px solid #035;
+	    border-radius: 4px;
+	    -webkit-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+	    transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+	    color: #035;
+	    line-height: 21px;
+	    font-weight: 300;
+	    letter-spacing: 2px;
+	    text-decoration: none;
+	    text-transform: uppercase;
+}
+
+
 /* Section/Article */
 
 	section.special, article.special {
@@ -268,7 +286,8 @@ position: relative !important;
 							header.navbar nav > ul > li {
 								display: inline-block;
 								margin-left: 1.5em;
-								padding-left: 0;
+								padding-left: 0.5em;
+								padding-right: 0.5em;
 							}
 
 								header.navbar nav > ul > li a {
@@ -277,7 +296,8 @@ position: relative !important;
 									-o-transition: color 0.2s ease-in-out;
 									-ms-transition: color 0.2s ease-in-out;
 									transition: color 0.2s ease-in-out;
-									color: #202222;
+									color: #003254;
+									text-align: center;
 									display: inline-block;
 									text-decoration: none;
 									text-transform: uppercase !important;
@@ -285,7 +305,7 @@ position: relative !important;
 								}
 
 									header.navbar nav > ul > li a:hover {
-										color: #ffffff;
+										color: #003254;
 									}
 
 								header.navbar nav > ul > li:first-child {
@@ -334,7 +354,7 @@ position: relative !important;
 /* Contenedor gris que es el secundario */
 
 		.wrapper.gray  {
-			background-color: #f4f4f4;
+			background-color: #e7e7e7;
 			border-bottom: 1px solid rgba(144, 144, 144, 0.25) ;
 		}
 
@@ -365,6 +385,8 @@ position: relative !important;
 			background-position: 0px 0px, 50% 50%;
 			background-size: auto, cover;
 			background-attachment: scroll, fixed;
+			border-bottom: 4px solid #035;
+			border-top:4px solid #035;
 		}
 
 
