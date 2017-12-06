@@ -364,7 +364,8 @@ position: relative !important;
 			}
 
 			.wrapper.white header {
-				margin-bottom: 1em;
+				margin-top: 3em;
+				margin-bottom: 5em;
 			}
 
 				.wrapper.white  header h2 {
@@ -445,8 +446,14 @@ position: relative !important;
 					margin-bottom: 1em;
 				}
 
+/*;*/
 				.wrapper.gray .feature {
 					margin: 0 0 2em 0;
+				}
+
+				.wrapper.gray section.feature  img.img {
+					height: 20em;
+					margin-left: 9em;
 				}
 
 					.wrapper.gray header div.navy-line {
@@ -454,6 +461,35 @@ position: relative !important;
 						height: 1px;
 						margin: 10px auto 0;
 						border-bottom: 2px solid #262626;
+					}
+
+					.wrapper.gray section.feature div.content h2 {
+						-moz-transition: color 0.2s ease-in-out;
+						-webkit-transition: color 0.2s ease-in-out;
+						-o-transition: color 0.2s ease-in-out;
+						-ms-transition: color 0.2s ease-in-out;
+						transition: color 0.2s ease-in-out;
+						color: #003254;
+						text-align: center;
+						display: inline-block;
+						text-decoration: none;
+						text-transform: uppercase !important;
+						font-size: 1em;
+					}
+
+
+					.wrapper.gray section.feature div.content h2 {
+						-moz-transition: color 0.2s ease-in-out;
+						-webkit-transition: color 0.2s ease-in-out;
+						-o-transition: color 0.2s ease-in-out;
+						-ms-transition: color 0.2s ease-in-out;
+						transition: color 0.2s ease-in-out;
+						color: #003254;
+						text-align: center;
+						display: inline-block;
+						text-decoration: none;
+						text-transform: none !important;
+						font-size: 0.9em;
 					}
 
 /* Contenerdor tres de imagenes */
