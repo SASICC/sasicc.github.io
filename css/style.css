@@ -94,6 +94,25 @@
 }
 
 
+.bottton-blue{
+		display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px 30px;
+    border: 1px solid #035;
+    border-radius: 4px;
+    -webkit-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+    transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+    color: #035;
+    line-height: 21px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+
 /* Section/Article */
 
 	section.special, article.special {
@@ -463,7 +482,7 @@ position: relative !important;
 						border-bottom: 2px solid #262626;
 					}
 
-					.wrapper.gray section.feature div.content h2 {
+					.wrapper.gray section.feature  h2 {
 						-moz-transition: color 0.2s ease-in-out;
 						-webkit-transition: color 0.2s ease-in-out;
 						-o-transition: color 0.2s ease-in-out;
@@ -474,36 +493,82 @@ position: relative !important;
 						display: inline-block;
 						text-decoration: none;
 						text-transform: uppercase !important;
-						font-size: 1em;
+						font-size: 1.5em;
 					}
 
 
-					.wrapper.gray section.feature div.content h2 {
+					.wrapper.gray section.feature  p {
 						-moz-transition: color 0.2s ease-in-out;
 						-webkit-transition: color 0.2s ease-in-out;
 						-o-transition: color 0.2s ease-in-out;
 						-ms-transition: color 0.2s ease-in-out;
 						transition: color 0.2s ease-in-out;
 						color: #003254;
-						text-align: center;
+						text-align: left;
 						display: inline-block;
 						text-decoration: none;
 						text-transform: none !important;
 						font-size: 0.9em;
 					}
 
+					.wrapper.gray section.feature  a {
+						margin-top: 2em;
+
+					}
+
 /* Contenerdor tres de imagenes */
-		.wrapper.img-one  {
+
+		section.wrapper.img  {
+			border-bottom: 4px solid #035;
+			border-top:4px solid #035;
+		}
+
+		section.wrapper.img div.container  {
+			padding: 2em;
+		}
+
+		section.wrapper.img.one{
 			background-image: -webkit-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-2.jpg");
 			background-image: -o-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-2.jpg");
 			background-image: linear-gradient(to left, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-2.jpg");
 			background-position: 0px 0px, 50% 50%;
 			background-size: auto, cover;
 			background-attachment: scroll, fixed;
-			border-bottom: 4px solid #035;
-			border-top:4px solid #035;
 		}
 
+				section.wrapper.img i {
+					margin-top: 2em;
+					display: block;
+					width: 3em;
+					margin-right: auto;
+					margin-left: auto;
+					padding-bottom:0.9em;
+					padding-top: 0.9em;
+					font-size: 2em;
+					color: #FFF;
+					border: 10px none #003254;
+					border-radius: 100%;
+					background-color: transparent;
+					box-shadow: 0 0 0 2px #fff;
+				}
+
+
+				section.wrapper.img  p {
+					margin-top: 2em;
+					margin-right: auto;
+					margin-left: auto;
+					-moz-transition: color 0.2s ease-in-out;
+					-webkit-transition: color 0.2s ease-in-out;
+					-o-transition: color 0.2s ease-in-out;
+					-ms-transition: color 0.2s ease-in-out;
+					transition: color 0.2s ease-in-out;
+					color: #FFF;
+					text-align: center;
+					display:block;
+					text-decoration: none;
+					text-transform: uppercase !important;
+					font-size: 1.5em;
+			}
 
 /* *************************************************************************** */
 /* ********************    Figuras Geometricas  ****************************** */
