@@ -1,14 +1,14 @@
 jQuery(function ($) { "use strict";
-	
+
 	/* ========================================================================= */
 	/*	Page Preloader
 	/* ========================================================================= */
-	
+
 	window.onload = function () {
 		document.getElementById('loading-mask').style.display = 'none';
 	}
 
-		
+
 	/* ========================================================================= */
 	/*	Nice Scroll - Custom Scrollbar
 	/* ========================================================================= */
@@ -26,7 +26,7 @@ jQuery(function ($) { "use strict";
 	/* ========================================================================= */
 	/*	Scroll Up / Back to top
 	/* ========================================================================= */
-	
+
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > 400) {
 			$("#scrollUp").fadeIn(200);
@@ -34,7 +34,7 @@ jQuery(function ($) { "use strict";
 			$("#scrollUp").fadeOut(200);
 		}
 	});
-	
+
 	$('#scrollUp').click(function() {
 		$('html, body').stop().animate({
 			scrollTop : 0
@@ -50,7 +50,7 @@ jQuery(function ($) { "use strict";
 	$("#header").sticky({
 		topSpacing : 0
 	});
-	
+
 	$('#nav').onePageNav({
 		currentClass: 'current',
 		changeHash: false,
@@ -59,10 +59,18 @@ jQuery(function ($) { "use strict";
 		filter: '',
 		easing: 'easeInOutExpo'
 	});
-	
 
 
-		
+	function rotateCard(btn){
+         var $card = $(btn).closest('.card-container');
+         console.log($card);
+         if($card.hasClass('hover')){
+             $card.removeClass('hover');
+         } else {
+             $card.addClass('hover');
+         }
+     }
+
 
 	/* ========================================================================= */
 	/*	Timer count
@@ -114,13 +122,13 @@ jQuery(function ($) { "use strict";
 			}
 		})
 	});
-	
+
 
 	/* ========================================================================= */
 	/*	Portfolio Filtering Hook
 	/* =========================================================================  */
 	 var containerEl1 = document.querySelector('[data-ref="container-1"]');
-	 var containerEl2 = document.querySelector('[data-ref="container-2"]');
+	 //var containerEl2 = document.querySelector('[data-ref="container-2"]');
 
 	 var config = {
 		 controls: {
@@ -129,9 +137,9 @@ jQuery(function ($) { "use strict";
 	 };
 
 	 var mixer1 = mixitup(containerEl1, config);
-	 var mixer1 = mixitup(containerEl2, config);				 
-					 
-					 
+	 //var mixer1 = mixitup(containerEl2, config);
+
+
 });
 
 /* ========================================================================= */
@@ -153,4 +161,3 @@ jQuery(function ($) { "use strict";
 $(window).bind("load", function () {
    //parallaxInit()
 });
-                            
