@@ -17,7 +17,7 @@ jQuery(function ($) { "use strict";
 		cursorborderradius: 0,
 		cursorwidth: "8px",
 		cursorfixedheight: 150,
-		cursorcolor: "#515151",
+		cursorcolor: "#035",
 		zindex: 9999,
 		cursorborder: 0,
 	});
@@ -45,20 +45,6 @@ jQuery(function ($) { "use strict";
 	/* ========================================================================= */
 	/*	Menu item highlighting
 	/* ========================================================================= */
-
-
-	$("#header").sticky({
-		topSpacing : 0
-	});
-
-	$('#nav').onePageNav({
-		currentClass: 'current',
-		changeHash: false,
-		scrollSpeed: 1500,
-		scrollThreshold: 0.5,
-		filter: '',
-		easing: 'easeInOutExpo'
-	});
 
 
 	function rotateCard(btn){
@@ -109,19 +95,9 @@ jQuery(function ($) { "use strict";
 	/*	Skills Chart
 	/* ========================================================================= */
 
-	$(".chart").appear(function () {
-		$(".chart").easyPieChart({
-			easing: "easeOutBounce",
-			barColor: "#515151",
-			size: "150",
-			lineWidth: 10,
-			animate: 2e3,
-			scaleColor: false,
-			onStep: function (e, t, n) {
-				$(this.el).find(".percent").text(Math.round(n))
-			}
-		})
-	});
+
+
+
 
 
 	/* ========================================================================= */
@@ -138,7 +114,6 @@ jQuery(function ($) { "use strict";
 
 	 var mixer1 = mixitup(containerEl1, config);
 	 //var mixer1 = mixitup(containerEl2, config);
-
 
 });
 

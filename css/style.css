@@ -80,7 +80,9 @@
 	 text-align: center;
  }
 
-
+ progress::-webkit-progress-bar {
+   border-radius: 100%;
+ }
 
 	button {
 	    display: inline-block;
