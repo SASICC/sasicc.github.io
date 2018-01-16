@@ -15,6 +15,9 @@
 		<script src="js/init.js"></script>
 		<script src="js/jquery-1.11.0.min.js"></script>
 		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/loading-bar.css" />
+		<!-- Custom Scrollbar -->
+		<script src="libs/line-chart/loading-bar.min.js"></script>
 
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
@@ -49,16 +52,16 @@
 			<nav id="nav">
 				<ul>
 					<li><a href="#banner">Inicio</a></li>
-					<li><a href="#Ser">Nosotros</a></li>
-					<li><a href="#Edu">Equipo</a></li>
-					<li><a href="#Emp">Servicios</a></li>
-					<li><a href="#Habi">Portafolio</a></li>
+					<li><a href="#Nos">Nosotros</a></li>
+					<li><a href="#Equi">Equipo</a></li>
+					<li><a href="#Ser">Servicios</a></li>
+					<li><a href="#Pro">Portafolio</a></li>
 					<!--<li><a href="#Pro">Proyectos</a></li>-->
 					<li><a href="#footer">Contacto</a></li>
 				</ul>
 			</nav>
 		</header>
-		<section class="wrapper white">
+		<section id="Nos" class="wrapper white">
 			<div class="container">
 				<header>
 						<h2>NOSOTROS</h2>
@@ -97,7 +100,7 @@
 			</div>
 		</section>
 
-		<section class="wrapper gray">
+		<section  class="wrapper gray">
 			<div class="container">
 				<header></header>
 				<div class="row">
@@ -123,7 +126,7 @@
 		</section>
 		<!-- Servicios -->
 
-		<section class="wrapper white">
+		<section id="Equi" class="wrapper white">
 			<div data-ref="container-1">
 			<div class="container" >
 				<header>
@@ -386,7 +389,11 @@
 					<section class="feature 6u 12u$(small)">
 						<div class="content">
 								<p>Diseño</p>
-								<progress value="70" max="100">70 %</progress>
+								<div class="ldBar label-center"  data-value="50"data-preset="line"></div>
+								<p>Diseño</p>
+								<div class="ldBar" data-value="50" data-preset="line"></div>
+								<p>Diseño</p>
+								<div class="ldBar" data-value="50" data-preset="line"></div>
 						</div>
 					</section>
 				</div>
@@ -406,15 +413,21 @@
 		<script src="libs/mixitup.min.js"></script>
 		<!-- Custom Scrollbar -->
 		<script src="libs/jquery.nicescroll.min.js"></script>
+
+	  <script src="jquery.nav.js"></script>
 		<!-- Jappear js -->
 		<script src="libs/jquery.appear.js"></script>
 		<!-- jQuery Easing -->
 		<script src="libs/jquery.easing-1.3.pack.js"></script>
+		<!-- Highlight menu item -->
+		<script src="libs/jquery.nav.js"></script>
 		<!-- Sticky Nav -->
 		<script src="libs/jquery.sticky.js"></script>
 		<!-- wow.min Script -->
 		<script src="libs/wow.min.js"></script>
 		<!-- Custom js -->
+
+
 		<script src="js/custom.js"></script>
 
 		<script type="text/javascript">

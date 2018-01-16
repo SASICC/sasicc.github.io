@@ -47,6 +47,16 @@ jQuery(function ($) { "use strict";
 	/* ========================================================================= */
 
 
+	$('#nav').onePageNav({
+		currentClass: 'current',
+		changeHash: false,
+		scrollSpeed: 1500,
+		scrollThreshold: 0.5,
+		filter: '',
+		easing: 'easeInOutExpo'
+	});
+
+
 	function rotateCard(btn){
          var $card = $(btn).closest('.card-container');
          console.log($card);
@@ -97,9 +107,6 @@ jQuery(function ($) { "use strict";
 
 
 
-
-
-
 	/* ========================================================================= */
 	/*	Portfolio Filtering Hook
 	/* =========================================================================  */
@@ -114,6 +121,7 @@ jQuery(function ($) { "use strict";
 
 	 var mixer1 = mixitup(containerEl1, config);
 	 //var mixer1 = mixitup(containerEl2, config);
+
 
 });
 
