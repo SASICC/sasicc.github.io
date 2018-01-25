@@ -105,6 +105,18 @@ jQuery(function ($) { "use strict";
 	/*	Skills Chart
 	/* ========================================================================= */
 
+	var bar = new ProgressBar.Line(line, {
+		strokeWidth: 4,
+		easing: 'easeInOut',
+		duration: 1400,
+		color: '#035',
+		trailColor: '#eee',
+		trailWidth: 1,
+		svgStyle: {width: '100%', height: '100%'}
+		});
+
+		bar.animate(1.0)
+
 
 
 	/* ========================================================================= */
