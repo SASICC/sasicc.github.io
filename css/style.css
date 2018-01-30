@@ -524,6 +524,15 @@ position: relative !important;
 
 					}
 
+						.wrapper.gray section.feature div.content {
+							padding:1em;
+							width: 100%;
+						}
+
+						.wrapper.gray section.feature div.content  div.row{
+							margin: 0em;
+							padding: 0.8em;
+						}
 /* Contenerdor tres de imagenes */
 
 		section.wrapper.img  {
@@ -942,8 +951,7 @@ position: relative !important;
 /* *************************************************************************** */
 
 .line {
-  width: calc(100% - 20%);
-  height: 12px;
+  height: 15px;
 }
 
 
