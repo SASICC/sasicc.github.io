@@ -105,17 +105,145 @@ jQuery(function ($) { "use strict";
 	/*	Skills Chart
 	/* ========================================================================= */
 
-	var bar = new ProgressBar.Line(line, {
+	var dn = new ProgressBar.Line('#dn', {
 		strokeWidth: 4,
-		easing: 'easeInOut',
+		easing: 'easeOut',
 		duration: 1400,
 		color: '#035',
 		trailColor: '#eee',
 		trailWidth: 1,
-		svgStyle: {width: '100%', height: '100%'}
+		svgStyle: {width: '100%', height: '100%'},
+		text: {
+			 style: {
+				 // Text color.
+				 // Default: same as stroke color (options.color)
+				 color: '#fff',
+				 position: 'absolute',
+				 right: '50%',
+				 top: '0',
+				 padding: 0,
+				 margin: 0,
+				 fontSize:'0.7em',
+				 transform: null
+			 },
+			 transform: {
+                prefix: true,
+                value: 'translate(-50%, -50%)'
+      }
+ 		},
+		 from: {color: '#eee'},
+		 to: {color: '#035'},
+		 step: (state, dn, attachment) => {
+			  dn.path.setAttribute('stroke', state.color);
+				dn.setText(Math.round(dn.value() * 100) + ' %');
+		 }
 		});
 
-		bar.animate(1.0)
+		var dr = new ProgressBar.Line('#dr', {
+			strokeWidth: 4,
+			easing: 'easeInOut',
+			duration: 1400,
+			color: '#035',
+			trailColor: '#eee',
+			trailWidth: 1,
+			svgStyle: {width: '100%', height: '100%'},
+			text: {
+				 style: {
+					 // Text color.
+					 // Default: same as stroke color (options.color)
+					 color: '#fff',
+					 position: 'absolute',
+					 right: '50%',
+					 top: '0',
+					 padding: 0,
+					 margin: 0,
+					 fontSize:'0.7em',
+					 transform: null
+				 },
+				 transform: {
+	                prefix: true,
+	                value: 'translate(-50%, -50%)'
+	      }
+	 		},
+			 from: {color: '#fff'},
+			 to: {color: '#035'},
+			 step: (state, dr, attachment) => {
+				  dr.path.setAttribute('stroke', state.color);
+					dr.setText(Math.round(dr.value() * 100) + ' %');
+			 }
+		});
+
+		var dw = new ProgressBar.Line('#dw', {
+			strokeWidth: 4,
+			easing: 'easeInOut',
+			duration: 1400,
+			color: '#035',
+			trailColor: '#eee',
+			trailWidth: 1,
+			svgStyle: {width: '100%', height: '100%'},
+			text: {
+				 style: {
+					 // Text color.
+					 // Default: same as stroke color (options.color)
+					 color: '#fff',
+					 position: 'absolute',
+					 right: '50%',
+					 top: '0',
+					 padding: 0,
+					 margin: 0,
+					 fontSize:'0.7em',
+					 transform: null
+				 },
+				 transform: {
+	                prefix: true,
+	                value: 'translate(-50%, -50%)'
+	      }
+	 		},
+			 from: {color: '#fff'},
+			 to: {color: '#035'},
+			 step: (state, dw, attachment) => {
+				  dw.path.setAttribute('stroke', state.color);
+					dw.setText(Math.round(dw.value() * 100) + ' %');
+			 }
+		});
+		var m = new ProgressBar.Line('#m', {
+			strokeWidth: 4,
+			easing: 'easeInOut',
+			duration: 1400,
+			color: '#035',
+			trailColor: '#eee',
+			trailWidth: 1,
+			svgStyle: {width: '100%', height: '100%'},
+			text: {
+				 style: {
+					 // Text color.
+					 // Default: same as stroke color (options.color)
+					 color: '#fff',
+					 position: 'absolute',
+					 right: '50%',
+					 top: '0',
+					 padding: 0,
+					 margin: 0,
+					 fontSize:'0.7em',
+					 transform: null
+				 },
+				 transform: {
+	                prefix: true,
+	                value: 'translate(-50%, -50%)'
+	      }
+	 		},
+			 from: {color: '#fff'},
+			 to: {color: '#035'},
+			 step: (state, m, attachment) => {
+				  m.path.setAttribute('stroke', state.color);
+					m.setText(Math.round(m.value() * 100) + ' %');
+			 }
+		});
+
+		dn.animate(0.75)
+		dr.animate(0.70)
+		dw.animate(0.80)
+		m.animate(0.80)
 
 
 
