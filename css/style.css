@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400");
 
@@ -457,6 +458,42 @@ position: relative !important;
 					text-transform: none !important;
 					font-size: 0.9em;
 				}
+
+			.wrapper.white .box {
+				text-align: center;
+				color: rgba(0, 50, 84, .76);
+				padding: 2em;
+			}
+
+				.wrapper.white .box h2 {
+					-moz-transition: color 0.2s ease-in-out;
+					-webkit-transition: color 0.2s ease-in-out;
+					-o-transition: color 0.2s ease-in-out;
+					-ms-transition: color 0.2s ease-in-out;
+					transition: color 0.2s ease-in-out;
+					color: #003254;
+					text-align: center;
+					display: inline-block;
+					text-decoration: none;
+					text-transform: uppercase !important;
+					font-size: 1em;
+				}
+
+
+				.wrapper.white .box p {
+					-moz-transition: color 0.2s ease-in-out;
+					-webkit-transition: color 0.2s ease-in-out;
+					-o-transition: color 0.2s ease-in-out;
+					-ms-transition: color 0.2s ease-in-out;
+					transition: color 0.2s ease-in-out;
+					color: #003254;
+					text-align: justify;
+					display: inline-block;
+					text-decoration: none;
+					text-transform: none !important;
+					font-size: 0.9em;
+				}
+
 
 /* Contenedor gris que es el secundario */
 
@@ -970,11 +1007,10 @@ position: relative !important;
 	height: 92.38px;
 	background-color: transparent;
 	margin: 46.19px auto 60px;
-	padding: 20px 0;
+	padding: 1em 0;
 	border-left: solid 3px rgba(0, 50, 84, .76);
 	border-right: solid 3px rgba(0, 50, 84, .76);
 	border-radius: 3%;
-
 	-webkit-transform: translateZ(0px);
 	   -moz-transform: translateZ(0px);
 		-ms-transform: translateZ(0px);
