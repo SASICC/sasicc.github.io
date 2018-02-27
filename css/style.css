@@ -510,7 +510,30 @@ position: relative !important;
 					margin-bottom: 1em;
 				}
 
-/*;*/
+				.wrapper.gray  header h2 {
+					direction: rtl;
+					color: #035;
+					font-size: 1em;
+					font-style: normal;
+					font-weight: 300;
+					text-align: center;
+					letter-spacing: 5px;
+					text-decoration: none;
+					text-transform: uppercase;
+					margin-bottom: 1em;
+				}
+
+				.wrapper.gray header p {
+					display: block;
+					color: #035;
+					font-size: 0.5em;
+					font-weight: 300;
+					text-align: center;
+					letter-spacing: 3px;
+					text-transform: uppercase;
+				}
+
+
 				.wrapper.gray .feature {
 					margin: 0 0 2em 0;
 				}
