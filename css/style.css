@@ -565,7 +565,7 @@ position: relative !important;
 					}
 
 
-					.wrapper.gray section.feature  p {
+					.wrapper.gray section.feature  p, .wrapper.gray section.feature div.content p {
 						-moz-transition: color 0.2s ease-in-out;
 						-webkit-transition: color 0.2s ease-in-out;
 						-o-transition: color 0.2s ease-in-out;
@@ -589,10 +589,35 @@ position: relative !important;
 							width: 100%;
 						}
 
-						.wrapper.gray section.feature div.content  div.row{
+						.wrapper.gray section.feature div.content div.row {
 							margin: 0em;
 							padding: 0.8em;
 						}
+
+						.wrapper.gray  div.row p{
+							text-align: center;
+							-moz-transition: color 0.2s ease-in-out;
+							-webkit-transition: color 0.2s ease-in-out;
+							-o-transition: color 0.2s ease-in-out;
+							-ms-transition: color 0.2s ease-in-out;
+							transition: color 0.2s ease-in-out;
+							color: #003254;
+							text-decoration: none;
+							text-transform: none !important;
+							font-size: 0.9em;
+						}
+
+						.wrapper.gray  div.row div.circle{
+							left: 4em;
+							right: 4em;
+							top: 1em;
+							bottom: 0em;
+							text-align: center;
+						  width: 50%;
+						  height: 50%;
+						  position: relative;
+						}
+
 /* Contenerdor tres de imagenes */
 
 		section.wrapper.img  {
@@ -1010,11 +1035,9 @@ position: relative !important;
 /* *****************************  Experiencia   ****************************** */
 /* *************************************************************************** */
 
-.line {
-  height: 15px;
-}
-
-
+	.line {
+	  height: 15px;
+	}
 
 
 /* *************************************************************************** */
