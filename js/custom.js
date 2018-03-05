@@ -1,4 +1,4 @@
-jQuery(function ($) { "use strict";
+	jQuery(function ($) { "use strict";
 
 	/* ========================================================================= */
 	/*	Page Preloader
@@ -245,6 +245,116 @@ jQuery(function ($) { "use strict";
 		dw.animate(0.80)
 		m.animate(0.80)
 
+		var gDw = new ProgressBar.Circle('#gDw', {
+			color: '#035',
+		  strokeWidth: 4,
+		  trailWidth: 1,
+		  easing: 'easeInOut',
+		  duration: 1400,
+		  text: {
+		    autoStyleContainer: false
+		  },
+		  from: { color: '#fff', width: 1 },
+		  to: { color: '#035', width: 4 },
+		  // Set default step function for all animate calls
+		  step: function(state, circle) {
+		    circle.path.setAttribute('stroke', state.color);
+		    circle.path.setAttribute('stroke-width', state.width);
+
+		    var value = Math.round(circle.value() * 100);
+		    if (value === 0) {
+		      circle.setText('');
+		    } else {
+		      circle.setText(value);
+		    }
+
+		  }
+		});
+
+		var gD = new ProgressBar.Circle('#gD', {
+			color: '#035',
+		  strokeWidth: 4,
+		  trailWidth: 1,
+		  easing: 'easeInOut',
+		  duration: 1400,
+		  text: {
+		    autoStyleContainer: false
+		  },
+		  from: { color: '#fff', width: 1 },
+		  to: { color: '#035', width: 4 },
+		  // Set default step function for all animate calls
+		  step: function(state, gD) {
+		    gD.path.setAttribute('stroke', state.color);
+		    gD.path.setAttribute('stroke-width', state.width);
+
+		    var value = Math.round(gD.value() * 100);
+		    if (value === 0) {
+		      gD.setText('');
+		    } else {
+		      gD.setText(value);
+		    }
+
+		  }
+		});
+
+		var gH = new ProgressBar.Circle('#gH', {
+			color: '#035',
+		  strokeWidth: 4,
+		  trailWidth: 1,
+		  easing: 'easeInOut',
+		  duration: 1400,
+		  text: {
+		    autoStyleContainer: false
+		  },
+		  from: { color: '#fff', width: 1 },
+		  to: { color: '#035', width: 4 },
+		  // Set default step function for all animate calls
+		  step: function(state, gH) {
+		    gH.path.setAttribute('stroke', state.color);
+		    gH.path.setAttribute('stroke-width', state.width);
+
+		    var value = Math.round(gH.value() * 100);
+		    if (value === 0) {
+		      gH.setText('');
+		    } else {
+		      gH.setText(value);
+		    }
+
+		  }
+		});
+
+		var gM = new ProgressBar.Circle('#gM', {
+			color: '#035',
+		  strokeWidth: 4,
+		  trailWidth: 1,
+		  easing: 'easeInOut',
+		  duration: 1400,
+		  text: {
+		    autoStyleContainer: false
+		  },
+		  from: { color: '#fff', width: 1 },
+		  to: { color: '#035', width: 4 },
+		  // Set default step function for all animate calls
+		  step: function(state, gH) {
+		    gH.path.setAttribute('stroke', state.color);
+		    gH.path.setAttribute('stroke-width', state.width);
+
+		    var value = Math.round(gH.value() * 100);
+		    if (value === 0) {
+		      gH.setText('');
+		    } else {
+		      gH.setText(value);
+		    }
+
+		  }
+		});
+
+
+
+		gDw.animate(0.80);
+		gD.animate(0.80);
+		gH.animate(0.80);
+		gM.animate(0.80);
 
 
 	/* ========================================================================= */
