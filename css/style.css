@@ -78,7 +78,7 @@
 	}
 
  .text-align{
-	 text-align: center;
+	 text-align: center !important;
  }
 
  progress::-webkit-progress-bar {
