@@ -8,6 +8,18 @@
 		document.getElementById('loading-mask').style.display = 'none';
 	}
 
+	jQuery(window).scroll(function () {
+	  var top = jQuery(document).scrollTop();
+		var height = 700;
+	  //alert(batas);
+
+	  if (top > height) {
+		jQuery('.navbar').addClass('menu-scroll');
+	  } else {
+	   jQuery('.navbar').removeClass('menu-scroll');
+	  }
+	});
+
 
 	/* ========================================================================= */
 	/*	Nice Scroll - Custom Scrollbar
