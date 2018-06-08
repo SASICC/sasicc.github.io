@@ -21,6 +21,21 @@
 	});
 
 
+	/* Home Slideshow Vegas
+   -----------------------------------------------*/
+   $(function() {
+     $('body').vegas({
+         slides: [
+             { src: './img/body/img-body-1.jpg' },
+             { src: './img/body/img-body-2.jpg' }
+         ],
+         timer: false,
+         transition: [ 'zoomIn', ],
+         animation: ['kenburns']
+     });
+   });
+
+
 	/* ========================================================================= */
 	/*	Nice Scroll - Custom Scrollbar
 	/* ========================================================================= */

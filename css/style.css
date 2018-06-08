@@ -6,7 +6,7 @@
 /* Basic */
 
 	body {
-		background-color: #FFF;
+
 	}
 
 	body, input, select, textarea {
@@ -214,9 +214,9 @@ position: relative !important;
 
 	#banner {
 		position: relative;
-		background-image: -webkit-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-1.jpg");
-		background-image: -o-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-1.jpg");
-		background-image: linear-gradient(to left, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-1.jpg");
+		background-image: -webkit-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
+		background-image: -o-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
+		background-image: linear-gradient(to left, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
 		background-position: 0px 0px, 50% 50%;
 		background-size: auto, cover;
 		background-attachment: scroll, fixed;
@@ -645,9 +645,9 @@ position: relative !important;
 		}
 
 		section.wrapper.img.one{
-			background-image: -webkit-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-2.jpg");
-			background-image: -o-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-2.jpg");
-			background-image: linear-gradient(to left, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58)), url("../img/body/img-body-2.jpg");
+			background-image: -webkit-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
+			background-image: -o-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
+			background-image: linear-gradient(to left, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
 			background-position: 0px 0px, 50% 50%;
 			background-size: auto, cover;
 			background-attachment: scroll, fixed;
