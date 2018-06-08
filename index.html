@@ -16,7 +16,8 @@
 		<link rel="stylesheet" href="css/animate.css" />
 		<link rel="stylesheet" href="css/vegas.min.css">
 		<!-- Custom Scrollbar -->
-
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -37,8 +38,17 @@
 			<section  class="wapper-imgHome container">
 				<header class="wapper-margen">
 					<span class="avatar zoomIn animated"></span>
-					<h3 class="zoomIn animated">CREAMOS SOFTWARE A LA COMODIDAD DE TU EMPRESA</h3>
-					<p class="zoomIn animated">CREAMOS TU SOFWARE A LA MEDIDA SIN DOLORES DE CABEZA</p>
+					<div id="team-carousel" class="owl-carousel">
+							<div class="item">
+									<h3 class="zoomIn animated">CREAMOS SOFTWARE A LA COMODIDAD DE TU EMPRESA</h3>
+									<p class="zoomIn animated"></p>
+							</div>
+							<div class="item">
+									<h3 class="zoomIn animated">CREAMOS TU SOFWARE A LA MEDIDA SIN DOLORES DE CABEZA</h3>
+									<p class="zoomIn animated"></p>
+							</div>
+					</div>
+
 				</header>
 			</section>
 		</section>
@@ -155,91 +165,118 @@
 				</div> <!-- end row -->
 			</div>  <!--	End container -->
 
+
 			<div class=" wow portfolio-item-hb " data-wow-duration="500ms">
 				<div class="container">
-					<ul id="og-grid-1" class="row  og-grid">
-						<!-- single portfolio item -->
-
-							<li class="mix dr 4u">
-								<div class=" wow fadeInUp" >
-												<div class="card-container">
-												<div class="card">
-														<div class="front">
-																<div class="cover">
-																		<img src="img/rotating_card_thumb3.png"/>
-																</div>
-																<div class="user">
-																		<img class="img-circle" src="img/rotating_card_profile.png"/>
-																</div>
-																<div class="content">
-																		<div class="main">
-																				<h3 class="name">Inna Corman</h3>
-																				<p class="profession">Product Manager</p>
-
-																				<p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+							<ul id="og-grid-1" class="row  og-grid">
+								<!-- single portfolio item -->
+									<div id="equipo-carousel" class="owl-carousel">
+									<li class="item mix dr 12u">
+										<div class=" wow fadeInUp" >
+														<div class="card-container">
+														<div class="card">
+																<div class="front">
+																		<div class="cover">
+																				<img src="img/rotating_card_thumb3.png"/>
 																		</div>
-																</div>
-														</div> <!-- end front panel -->
-
-												</div> <!-- end card -->
-										</div> <!-- end card-container -->
-								</div> <!-- end col-sm-3 -->
-							</li>
-
-
-
-							<li class="mix sr 4u">
-								<div class=" wow fadeInUp" data-wow-duration="500ms" >
-												<div class="card-container">
-												<div class="card">
-														<div class="front">
-																<div class="cover">
-																		<img src="img/rotating_card_thumb3.png"/>
-																</div>
-																<div class="user">
-																		<img class="img-circle" src="img/rotating_card_profile.png"/>
-																</div>
-																<div class="content">
-																		<div class="main">
-																				<h3 class="name">Inna Corman</h3>
-																				<p class="profession">Product Manager</p>
-																				<p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+																		<div class="user">
+																				<img class="img-circle" src="img/rotating_card_profile.png"/>
 																		</div>
-																</div>
-														</div> <!-- end front panel -->
-												</div> <!-- end card -->
-										</div> <!-- end card-container -->
-								</div> <!-- end col-sm-3 -->
-							</li>
+																		<div class="content">
+																				<div class="main">
+																						<h3 class="name">Inna Corman</h3>
+																						<p class="profession">Product Manager</p>
 
-
-							<li class="mix dd 4u">
-								<div class=" wow fadeInUp" data-wow-duration="500ms" >
-												<div class="card-container">
-												<div class="card">
-														<div class="front">
-																<div class="cover">
-																		<img src="img/rotating_card_thumb3.png"/>
-																</div>
-																<div class="user">
-																		<img class="img-circle" src="img/rotating_card_profile.png"/>
-																</div>
-																<div class="content">
-																		<div class="main">
-																				<h3 class="name">Inna Corman</h3>
-																				<p class="profession">Product Manager</p>
-
-																				<p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+																						<p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+																				</div>
 																		</div>
-																</div>
-														</div> <!-- end front panel -->
+																</div> <!-- end front panel -->
 
-												</div> <!-- end card -->
-										</div> <!-- end card-container -->
-								</div> <!-- end col-sm-3 -->
-							</li>
+														</div> <!-- end card -->
+												</div> <!-- end card-container -->
+										</div> <!-- end col-sm-3 -->
+									</li>
 
-					</ul> <!-- end og grid -->
+
+
+									<li class="item mix sr 12u">
+										<div class=" wow fadeInUp" data-wow-duration="500ms" >
+														<div class="card-container">
+														<div class="card">
+																<div class="front">
+																		<div class="cover">
+																				<img src="img/rotating_card_thumb3.png"/>
+																		</div>
+																		<div class="user">
+																				<img class="img-circle" src="img/rotating_card_profile.png"/>
+																		</div>
+																		<div class="content">
+																				<div class="main">
+																						<h3 class="name">Inna Corman</h3>
+																						<p class="profession">Product Manager</p>
+																						<p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+																				</div>
+																		</div>
+																</div> <!-- end front panel -->
+														</div> <!-- end card -->
+												</div> <!-- end card-container -->
+										</div> <!-- end col-sm-3 -->
+									</li>
+
+
+									<li class="item mix dd 12u">
+										<div class=" wow fadeInUp" data-wow-duration="500ms" >
+														<div class="card-container">
+														<div class="card">
+																<div class="front">
+																		<div class="cover">
+																				<img src="img/rotating_card_thumb3.png"/>
+																		</div>
+																		<div class="user">
+																				<img class="img-circle" src="img/rotating_card_profile.png"/>
+																		</div>
+																		<div class="content">
+																				<div class="main">
+																						<h3 class="name">Inna Corman</h3>
+																						<p class="profession">Product Manager</p>
+
+																						<p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+																				</div>
+																		</div>
+																</div> <!-- end front panel -->
+
+														</div> <!-- end card -->
+												</div> <!-- end card-container -->
+										</div> <!-- end col-sm-3 -->
+									</li>
+									<li class="item mix dd 12u">
+										<div class=" wow fadeInUp" data-wow-duration="500ms" >
+														<div class="card-container">
+														<div class="card">
+																<div class="front">
+																		<div class="cover">
+																				<img src="img/rotating_card_thumb3.png"/>
+																		</div>
+																		<div class="user">
+																				<img class="img-circle" src="img/rotating_card_profile.png"/>
+																		</div>
+																		<div class="content">
+																				<div class="main">
+																						<h3 class="name">Inna Corman</h3>
+																						<p class="profession">Product Manager</p>
+
+																						<p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+																				</div>
+																		</div>
+																</div> <!-- end front panel -->
+
+														</div> <!-- end card -->
+												</div> <!-- end card-container -->
+										</div> <!-- end col-sm-3 -->
+									</li>
+								</div>
+							</ul> <!-- end og grid -->
+
 				</div>
 			</div>
 			</div>
@@ -397,6 +434,9 @@
 		<!-- Highlight menu item -->
 		<script src="libs/jquery.nav.js"></script>
 		<!-- Sticky Nav -->
+
+		<script src="libs/owl.carousel.js"></script>
+
 		<script src="libs/vegas.min.js"></script>
 		<!-- wow.min Script -->
 		<script src="libs/wow.min.js"></script>

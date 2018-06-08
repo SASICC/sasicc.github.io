@@ -36,6 +36,41 @@
    });
 
 
+	 /* Team carousel
+	   -----------------------------------------------*/
+	   $(document).ready(function() {
+	       $("#team-carousel").owlCarousel({
+	           items : 1,
+						 nav:true,
+						 autoplay:true,
+						 autoplayTimeout:60,
+						 autoplayHoverPause:true,
+						 itemsDesktop : [1199,3],
+						 itemsDesktopSmall : [979,3],
+						 slideSpeed: 300,
+						 itemsDesktop : [1199,2],
+						 itemsTablet: [768,1],
+						 itemsTabletSmall: [985,2],
+						 itemsMobile : [479,1],
+	       });
+				 $("#equipo-carousel").owlCarousel({
+	           items : 3,
+						 nav:true,
+						 margin:2,
+						 autoplay:true,
+						 autoplayTimeout:60,
+						 autoplayHoverPause:true,
+						 itemsDesktop : [1199,3],
+						 itemsDesktopSmall : [979,3],
+						 slideSpeed: 300,
+						 itemsDesktop : [1199,2],
+						 itemsTablet: [768,1],
+						 itemsTabletSmall: [985,2],
+						 itemsMobile : [479,1],
+	       });
+	     });
+/*
+*/
 	/* ========================================================================= */
 	/*	Nice Scroll - Custom Scrollbar
 	/* ========================================================================= */
