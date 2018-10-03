@@ -4,9 +4,6 @@
 
 /* Basic */
 
-	body {
-
-	}
 
 	body, input, select, textarea {
 		color: #444;
@@ -407,7 +404,7 @@ position: relative !important;
 
 			.wrapper.white header {
 				margin-top: 3em;
-				margin-bottom: 5em;
+				margin-bottom: 3em;
 			}
 
 				.wrapper.white  header h2 {
@@ -473,13 +470,23 @@ position: relative !important;
 					font-size: 0.9em;
 				}
 
-			.wrapper.white .box {
-				text-align: center;
+			.wrapper.white section div.box {
+				text-align: center ;
 				color: rgba(0, 50, 84, .76);
 				padding: 2em;
+				height: auto;
+				min-height: auto;
+				max-height: auto;
+				width: 376px;
+				margin: 0 auto;
+			  -webkit-box-shadow: 0px 10px 23px -10px rgba(0, 0, 0, 0.43);
+			  -moz-box-shadow: 0px 10px 23px -10px rgba(0, 0, 0, 0.43);
+			  -ms-box-shadow: 0px 10px 23px -10px rgba(0, 0, 0, 0.43);
+			  -o-box-shadow: 0px 10px 23px -10px rgba(0, 0, 0, 0.43);
+			  box-shadow: 0px 10px 23px -10px rgba(0, 0, 0, 0.43);
 			}
 
-				.wrapper.white .box h2 {
+				.wrapper.white section div.box  h2 {
 					-moz-transition: color 0.2s ease-in-out;
 					-webkit-transition: color 0.2s ease-in-out;
 					-o-transition: color 0.2s ease-in-out;
@@ -492,20 +499,26 @@ position: relative !important;
 					text-transform: uppercase !important;
 					font-size: 1em;
 				}
+				.wrapper.white section div.box  div.content{
 
+				}
 
-				.wrapper.white .box p {
+				.wrapper.white section div.box  p {
 					-moz-transition: color 0.2s ease-in-out;
 					-webkit-transition: color 0.2s ease-in-out;
 					-o-transition: color 0.2s ease-in-out;
 					-ms-transition: color 0.2s ease-in-out;
 					transition: color 0.2s ease-in-out;
 					color: #003254;
-					text-align: justify;
+					text-align: center;
 					display: inline-block;
 					text-decoration: none;
 					text-transform: none !important;
 					font-size: 0.9em;
+				}
+
+				.wrapper.white section div.box  a{
+						margin: 0.5em 0;
 				}
 
 
@@ -715,6 +728,11 @@ position: relative !important;
 			transition: all 0.3s ease-in-out 0s;
 
 		}
+		.portfolio-item-hb{
+				max-height: 790px;
+				height: auto;
+				overflow: hidden;
+		}
 
 
 
@@ -723,6 +741,12 @@ position: relative !important;
 		    border-radius: 4px;
 		    color: #444444;
 				margin-right: 1em;
+				-webkit-box-shadow: 9px 14px 20px 0px rgba(231,231,231,0.75);
+				-moz-box-shadow: 9px 14px 20px 0px rgba(231,231,231,0.75);
+				box-shadow: 9px 14px 20px 0px rgba(231,231,231,0.75);
+				height: 359px;
+    		max-height: 359px;
+    		min-height: auto;
 		}
 		.card-container, .front, .back {
 			width: 100%;

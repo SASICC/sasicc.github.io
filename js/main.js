@@ -422,6 +422,7 @@
 	/* ========================================================================= */
 	/*	Portfolio Filtering Hook
 	/* =========================================================================  */
+	
 	 var containerEl1 = document.querySelector('[data-ref="container-1"]');
 	 //var containerEl2 = document.querySelector('[data-ref="container-2"]');
 
