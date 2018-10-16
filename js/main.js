@@ -4,9 +4,6 @@
 	/*	Page Preloader
 	/* ========================================================================= */
 
-	window.onload = function () {
-		document.getElementById('loading-mask').style.display = 'none';
-	}
 
 	jQuery(window).scroll(function () {
 	  var top = jQuery(document).scrollTop();
@@ -23,52 +20,44 @@
 
 	/* Home Slideshow Vegas
    -----------------------------------------------*/
-   $(function() {
+  $(function() {
      $('body').vegas({
          slides: [
              { src: './img/body/img-body-1.jpg' },
-             { src: './img/body/img-body-2.jpg' }
+             { src: './img/body/img-body-2.jpg' },
+						 { src: './img/body/img-body-3.jpeg' },
+						 { src: './img/body/img-body-4.jpg' },
+						 { src: './img/body/img-body-5.jpg' }
          ],
          timer: false,
          transition: [ 'zoomIn', ],
          animation: ['kenburns']
      });
+
+		 var owl = 	$('.owl-carousel').owlCarousel({
+ 				items: 1,
+ 		    loop: true,
+ 		    margin: 0,
+ 		    responsiveClass: true,
+ 		    nav: true,
+ 		    dots: true,
+ 		    autoHeight: true,
+ 		    smartSpeed: 500,
+ 		    autoPlay: true,
+ 				autoPayTimeout: 1000,
+ 				autoPlayHoverPause: true,
+ 		    navText: [
+ 		      "<i class='icon-arrow-left2 owl-direction'></i>",
+ 		      "<i class='icon-arrow-right2 owl-direction'></i>"
+ 	     	]
+ 		});
    });
 
 
 	 /* Team carousel
 	   -----------------------------------------------*/
-	   $(document).ready(function() {
-	       $("#team-carousel").owlCarousel({
-	           items : 1,
-						 nav:true,
-						 autoplay:true,
-						 autoplayTimeout:60,
-						 autoplayHoverPause:true,
-						 itemsDesktop : [1199,3],
-						 itemsDesktopSmall : [979,3],
-						 slideSpeed: 300,
-						 itemsDesktop : [1199,2],
-						 itemsTablet: [768,1],
-						 itemsTabletSmall: [985,2],
-						 itemsMobile : [479,1],
-	       });
-				 $("#equipo-carousel").owlCarousel({
-	           items : 3,
-						 nav:true,
-						 margin:2,
-						 autoplay:true,
-						 autoplayTimeout:60,
-						 autoplayHoverPause:true,
-						 itemsDesktop : [1199,3],
-						 itemsDesktopSmall : [979,3],
-						 slideSpeed: 300,
-						 itemsDesktop : [1199,2],
-						 itemsTablet: [768,1],
-						 itemsTabletSmall: [985,2],
-						 itemsMobile : [479,1],
-	       });
-	     });
+
+
 /*
 */
 	/* ========================================================================= */
@@ -135,6 +124,7 @@
 	/* ========================================================================= */
 
 	(function() {
+
 		var count = {
 		  initialized : false,
 		  initialize : function() {
@@ -307,122 +297,12 @@
 		dw.animate(0.80)
 		m.animate(0.80)
 
-		var gDw = new ProgressBar.Circle('#gDw', {
-			color: '#035',
-		  strokeWidth: 4,
-		  trailWidth: 1,
-		  easing: 'easeInOut',
-		  duration: 1400,
-		  text: {
-		    autoStyleContainer: false
-		  },
-		  from: { color: '#fff', width: 1 },
-		  to: { color: '#035', width: 4 },
-		  // Set default step function for all animate calls
-		  step: function(state, circle) {
-		    circle.path.setAttribute('stroke', state.color);
-		    circle.path.setAttribute('stroke-width', state.width);
-
-		    var value = Math.round(circle.value() * 100);
-		    if (value === 0) {
-		      circle.setText('');
-		    } else {
-		      circle.setText(value);
-		    }
-
-		  }
-		});
-
-		var gD = new ProgressBar.Circle('#gD', {
-			color: '#035',
-		  strokeWidth: 4,
-		  trailWidth: 1,
-		  easing: 'easeInOut',
-		  duration: 1400,
-		  text: {
-		    autoStyleContainer: false
-		  },
-		  from: { color: '#fff', width: 1 },
-		  to: { color: '#035', width: 4 },
-		  // Set default step function for all animate calls
-		  step: function(state, gD) {
-		    gD.path.setAttribute('stroke', state.color);
-		    gD.path.setAttribute('stroke-width', state.width);
-
-		    var value = Math.round(gD.value() * 100);
-		    if (value === 0) {
-		      gD.setText('');
-		    } else {
-		      gD.setText(value);
-		    }
-
-		  }
-		});
-
-		var gH = new ProgressBar.Circle('#gH', {
-			color: '#035',
-		  strokeWidth: 4,
-		  trailWidth: 1,
-		  easing: 'easeInOut',
-		  duration: 1400,
-		  text: {
-		    autoStyleContainer: false
-		  },
-		  from: { color: '#fff', width: 1 },
-		  to: { color: '#035', width: 4 },
-		  // Set default step function for all animate calls
-		  step: function(state, gH) {
-		    gH.path.setAttribute('stroke', state.color);
-		    gH.path.setAttribute('stroke-width', state.width);
-
-		    var value = Math.round(gH.value() * 100);
-		    if (value === 0) {
-		      gH.setText('');
-		    } else {
-		      gH.setText(value);
-		    }
-
-		  }
-		});
-
-		var gM = new ProgressBar.Circle('#gM', {
-			color: '#035',
-		  strokeWidth: 4,
-		  trailWidth: 1,
-		  easing: 'easeInOut',
-		  duration: 1400,
-		  text: {
-		    autoStyleContainer: false
-		  },
-		  from: { color: '#fff', width: 1 },
-		  to: { color: '#035', width: 4 },
-		  // Set default step function for all animate calls
-		  step: function(state, gH) {
-		    gH.path.setAttribute('stroke', state.color);
-		    gH.path.setAttribute('stroke-width', state.width);
-
-		    var value = Math.round(gH.value() * 100);
-		    if (value === 0) {
-		      gH.setText('');
-		    } else {
-		      gH.setText(value);
-		    }
-
-		  }
-		});
-
-
-
-		gDw.animate(0.80);
-		gD.animate(0.80);
-		gH.animate(0.80);
-		gM.animate(0.80);
-
+	
 
 	/* ========================================================================= */
 	/*	Portfolio Filtering Hook
 	/* =========================================================================  */
-	
+
 	 var containerEl1 = document.querySelector('[data-ref="container-1"]');
 	 //var containerEl2 = document.querySelector('[data-ref="container-2"]');
 
