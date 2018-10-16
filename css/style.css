@@ -228,15 +228,32 @@
 /* *********************    Banner-slider  *********************************** */
 /* *************************************************************************** */
 
-	#banner {
-		position: relative;
-		background-image: -webkit-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
-		background-image: -o-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
-		background-image: linear-gradient(to left, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
-		background-position: 0px 0px, 50% 50%;
-		background-size: auto, cover;
-		background-attachment: scroll, fixed;
-		color: #ffffff;
+#banner {
+	position: relative;
+	background-image: -webkit-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
+	background-image: -o-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
+	background-image: linear-gradient(to left, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
+	background-position: 0px 0px, 50% 50%;
+	background-size: auto, cover;
+	background-attachment: scroll, fixed;
+	color: #ffffff;
+	padding: 1em 0em 1em;
+	text-align: center;
+	display: table;
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 11;
+}
+
+
+	img{
+		max-width: 100%;
+	}
+
+	.owl-carousel {
 		padding: 1em 0em 1em;
 		text-align: center;
 		display: table;
@@ -245,70 +262,60 @@
 		min-height: 100%;
 		left: 0;
 		top: 0;
-		z-index: 11;
 	}
 
-	section.wapper-imgHome{
-		height: 37em;
+	.owl-carousel .item {
+		height: 40em;
+		position: relative;
+		padding: 15rem 0em 1em ;
+		margin: 0 auto;
 	}
 
-		section.wapper-imgHome h3 {
+		.owl-carousel .item h3, h2, h1  {
 			color: #ffffff;
-			font-size: 3em;
+			font-size: 2.5em;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
 		}
 
-		section.wapper-imgHome	header.wapper-margen span.avatar {
-			display: block;
-			margin-bottom: 1.5em;
-			display: block;
-			margin: 1em auto;
-			border: 0px;
-			background-image: url(../img/per/cloud01.png);
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: contain;
-			/*box-shadow: 0 0 0 0.09em rgba(255, 255, 255, 0.58);*/
-		}
-
-		section.wapper-imgHome p {
+		.owl-carousel .item p  {
+			color: #ffffff;
 			font-size: 1.5em;
-			margin: 1.5em 0 0 0;
+			line-height: 1em;
+			margin: 2em 0 1em 0;
+			padding: 0;
 		}
 
-		section.wapper-imgHome .actions {
+		.owl-carousel .item .actions {
 			margin: 3em 0 0 0;
 		}
 
-		section.wapper-imgHome .button {
-			background-color: transparent;
-			border: 1px solid #ffffff;
-			font-weight: 300;
-		}
-
-			section.wapper-imgHome .button:hover {
-				background-color: rgba(255, 255, 255, 0.2);
+			.owl-carousel .item .button {
+				background-color: transparent;
+				border: 1px solid #ffffff;
+				font-weight: 300;
 			}
+
+				.owl-carousel .item .button:hover {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
 
 
 /* ********************************************************** */
 /* *********************    Menu    ************************* */
 /* ********************************************************** */
-				header.navbar {
-					position: relative ;
-					height:3em;
-					background-color:#ffffff ;
-					color: #202222;
-					cursor: default;
-					width: 100%;
-					z-index: 10000;
-					border-bottom:  1px solid #e7e7e7;
-				}
-			.current{
-				border-bottom:  1px solid #e7e7e7;
-			}
+	header.navbar {
+		position: relative ;
+		height:3em;
+		background-color:#ffffff ;
+		color: #202222;
+		cursor: default;
+		width: 100%;
+		z-index: 10000;
+		border-bottom:  1px solid #e7e7e7;
+	}
+
 				header.navbar.menu-scroll{
 						margin: 0px;
 						padding-top: ;
