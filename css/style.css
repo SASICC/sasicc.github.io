@@ -693,6 +693,19 @@
 			background-attachment: scroll, fixed;
 		}
 
+				section.wrapper.img.one  header h2 {
+					direction: rtl;
+					color: #FFF;
+					font-size: 1em;
+					font-style: normal;
+					font-weight: 300;
+					text-align: center;
+					letter-spacing: 5px;
+					text-decoration: none;
+					text-transform: uppercase;
+					margin-bottom: 1em;
+				}
+
 				section.wrapper.img i {
 					margin-top: 0em;
 					display: block;
