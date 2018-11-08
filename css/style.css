@@ -954,7 +954,9 @@
 /* *****************************  footer   ****************************** */
 /* *************************************************************************** */
 
-#footer.wrapper.white section , #footer.wrapper.white section >  div.content  {
+
+
+#footer.wrapper.white, #footer.wrapper.white section , #footer.wrapper.white section >  div.content  {
 	color: #035;
 	text-align: center;
 }
