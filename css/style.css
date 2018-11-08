@@ -317,7 +317,18 @@
 		border-bottom:  1px solid #e7e7e7;
 	}
 
-				header.navbar.menu-scroll{
+		header.nav-fixed {
+			position: fixed ;
+			height:3em;
+			background-color:#ffffff ;
+			color: #202222;
+			cursor: default;
+			width: 100%;
+			z-index: 10000;
+			border-bottom:  1px solid #e7e7e7;
+		}
+
+				header.navbar.menu-scroll, header.nav-fixed.menu-scroll{
 						margin: 0px;
 						padding-top: ;
 						padding-bottom: 0px;
@@ -329,7 +340,7 @@
 						height:3em;
 				}
 
-					header.navbar div.navbar-header{
+					header.navbar div.navbar-header, header.nav-fixed div.navbar-header {
 						text-align: left;
 						position: absolute;
 						padding-top: 0.5em;
@@ -337,7 +348,7 @@
 						left: 5em;
 					}
 
-					header.navbar div.navbar-header a{
+					header.navbar div.navbar-header a,  header.nav-fixed div.navbar-header a{
 						direction: rtl;
 						color: #035;
 						font-size: 0.8em;
@@ -350,7 +361,7 @@
 						margin-bottom: 1em;
 					}
 
-					header.navbar nav {
+					header.navbar nav, header.nav-fixed nav {
 						float:right;
 						position: absolute;
 						right:1em;
@@ -362,13 +373,13 @@
 						vertical-align: middle;
 					}
 
-						header.navbar nav > ul {
+						header.navbar nav > ul, header.nav-fixed nav > ul {
 							list-style: none;
 							margin: 0;
 							padding-left: 0;
 						}
 
-							header.navbar nav > ul > li {
+							header.navbar nav > ul > li, header.nav-fixed nav > ul > li {
 								display: inline-block;
 								margin-left: 1.5em;
 								padding-left: 0.5em;
