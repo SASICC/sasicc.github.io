@@ -1,10 +1,5 @@
 @charset "UTF-8";
-
-
-
 /* Basic */
-
-
 body, input, select, textarea {
 	color: #444;
 	font-family: "Lato", Helvetica, sans-serif;
@@ -590,7 +585,9 @@ header.navbar nav > ul > li .button {
 
 
 .wrapper.gray .feature {
-	margin: 0 0 2em 0;
+	margin: 1em 0 0 0;
+	text-align: center;
+	color: rgba(0, 50, 84, .76);
 }
 
 .wrapper.gray section.feature  img.img {
@@ -617,6 +614,20 @@ header.navbar nav > ul > li .button {
 	text-decoration: none;
 	text-transform: uppercase !important;
 	font-size: 1.5em;
+}
+
+.wrapper.gray section.feature  h3{
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	color: #003254;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase !important;
+	font-size: 1em;
 }
 
 
@@ -938,19 +949,19 @@ section.wrapper.img  p {
 	font-size: 13px;
 	position: relative;
 	text-transform: uppercase;
-	top: 30px;
+	top: 20px;
 }
 
 .hover-mask ul {
 	left: 25%;
-	top: 70%;
+	top: 65%;
 	width: 100%;
 	position: absolute;
 }
 
 .hover-mask ul li {
-	height: 40px;
-	width: 40px;
+	height: 45px;
+	width: 45px;
 	border: 2px solid #ffffff;
 	border-radius: 50px;
 	display: inline-block;
@@ -972,6 +983,59 @@ section.wrapper.img  p {
 	-ms-transform: rotateY(0deg) scale(1,1);
 	-o-transform: rotateY(0deg) scale(1,1);
 	transform: rotateY(0deg) scale(1,1);
+}
+
+.timeline {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	margin-top: 20px;
+}
+
+.li {
+  transition: all 200ms ease-in;
+}
+
+
+.status, .start {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #D6DCE0;
+  position: relative;
+  transition: all 200ms ease-in;
+}
+.status h4, .start  {
+  font-weight: 300;
+	margin-top: 2em;
+}
+
+.start:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: -15px;
+  left: 0%;
+  transition: all 200ms ease-in;
+}
+
+
+.status:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: -15px;
+  left: 42%;
+  transition: all 200ms ease-in;
 }
 
 
