@@ -1,8 +1,9 @@
 /* Basic */
 
-	html, body {
-		
-	}
+
+html,body {
+	overflow: auto !important;
+}
 
 	body, input, select, textarea {
 		font-size: 12pt;

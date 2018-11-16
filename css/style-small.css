@@ -43,34 +43,34 @@ header.major p {
 	font-size: 1.25em;
 }
 
+.owl-carousel .item h3, h2, h1{
+	font-size: 2em;
+}
+
+.owl-carousel .item p{
+	font-size: 1.5em;
+}
 /* Wrapper */
 
-.wrapper {
-	/* Style 1 Wrapper */
-	/* Style 2 Wrapper */
+.wrapper.white .feature {
+    text-align: center;
+		width: 100%;
+    color: rgba(0, 50, 84, .76);
+		margin-left:0em;
+
 }
 
-.wrapper.style1 {
-	padding: 4em 2em 2em;
+.wrapper.white header h2{
+	font-size: 1.5em;
 }
 
-.wrapper.style2 {
-	padding: 4em 0em 2em;
+.wrapper.white header p{
+	font-size: 0.8em;
 }
 
-.vertical-timeline-content h2{
-	font-size: 18px;
+#server div.container div.row section{
+ margin-bottom: 1em;
 }
-
-.vertical-timeline-content p{
-	font-size: 12px;
-}
-
-.vertical-timeline-content .vertical-date {
-	float: left;
-	font-size: 12px;
-}
-
 
 /* Footer */
 

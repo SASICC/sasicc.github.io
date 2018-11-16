@@ -18,9 +18,24 @@
 	}
 
 /* Banner */
-
 	#banner {
-		padding: 12em 2em 10em;
+		padding: 1em 2em 1em;
+	}
+
+	#banner h2 {
+		font-size: 2.25em;
+	}
+
+	#banner p {
+		font-size: 1.25em;
+	}
+
+	.owl-carousel .owl-item{
+		width: 100% !important;
+	}
+
+	.owl-carousel .item{
+		width: 100%;
 	}
 
 /* Layers */
@@ -35,7 +50,7 @@
 	}
 
 		#navButton .toggle:before {
-			content: "";
+			content: "\f03a";
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: FontAwesome;
@@ -45,9 +60,9 @@
 		}
 
 		#navButton .toggle:before {
-			background: rgba(144, 144, 144, 0.65);
+			background: #fff;
 			border-radius: 4px;
-			color: #fff;
+			color: #035;
 			display: block;
 			font-size: 16px;
 			height: 2.25em;
@@ -59,9 +74,29 @@
 			width: 3.5em;
 		}
 
+		header.nav-fixed {
+			position: fixed ;
+		}
+
+		header.navbar div.navbar-header, header.nav-fixed div.navbar-header {
+			text-align: center;
+	    position: fixed;
+	    padding-top: 0.5em;
+	    bottom: unset;
+	    left: unset;
+	    height: 3em;
+	    width: 100%;
+		}
+
+		header.navbar div.navbar-header a,  header.nav-fixed div.navbar-header a{
+			color: #;
+			width: 100%;
+		}
+
+
 	#navPanel {
-		background-image: linear-gradient(70deg, #181818 50%, #1a1a1a 50%);
-		color: #888;
+		background-color: #035;
+		color: ;
 	}
 
 		#navPanel nav {
@@ -93,6 +128,19 @@
 			#navPanel nav .button {
 				width: 100%;
 			}
+
+.wrapper.white .feature {
+    text-align: center;
+		width: 30em;
+    color: rgba(0, 50, 84, .76);
+		margin-left: 6em;
+
+}
+
+.wrapper.white section div.box{
+	width: 300px;
+}
+
 
 /* Footer */
 
