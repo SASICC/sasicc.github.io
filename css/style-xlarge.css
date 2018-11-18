@@ -1,10 +1,4 @@
 
-
-
-html,body {
-	overflow: auto !important;
-}
-
 	body, input, select, textarea {
 		font-size: 13pt;
 	}
