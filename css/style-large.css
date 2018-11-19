@@ -1,7 +1,7 @@
 
 
 html,body {
-	
+
 }
 
 /* Basic */
@@ -20,6 +20,21 @@ html,body {
 			font-size: 3.5em;
 		}
 
+			.wrapper.white section div.box{
+				width: 488px ;
+			}
+
+			.owl-wrapper {
+				width: auto !important;
+			}
+
+			.owl-carousel .owl-item{
+				width: 100% !important;
+			}
+
+			.owl-carousel .item{
+				width: 100%;
+			}
 /* Footer */
 
 	#footer .icons .rounded {

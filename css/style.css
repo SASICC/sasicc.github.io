@@ -93,6 +93,10 @@ button {
 	text-transform: uppercase;
 }
 
+i {
+	color: #035;
+}
+
 
 .bottton-blue{
 	display: inline-block;
@@ -505,7 +509,7 @@ img{
 	text-align: center ;
 	color: rgba(0, 50, 84, .76);
 	padding: 2em;
-	height: 488px;
+	height: 520px;
 	min-height: auto;
 	max-height: auto;
 	width: 370px;
@@ -1114,11 +1118,11 @@ img{
 			.pricing-plan {
 				 margin: 0 0 1rem 0;
 				 padding: 0;
-				 font-size: 13px;
+				 font-size: 20px;
 				 letter-spacing: 2px;
 				 text-transform: uppercase;
-				 font-weight: 700;
-				 color: #888f94;
+				 font-weight: 300;
+				 color: #035;
 			}
 
 

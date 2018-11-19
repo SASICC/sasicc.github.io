@@ -68,6 +68,29 @@ header.major p {
 	font-size: 0.8em;
 }
 
+.owl-wrapper {
+	width: auto !important;
+}
+
+.owl-carousel .owl-item{
+	width: 100% !important;
+}
+
+.owl-carousel .item{
+	width: 100%;
+}
+
+.portfolio-item-hb.marketing{
+  max-height: none;
+}
+.wrapper.gray .feature img {
+	display: none;
+}
+
+.wrapper.white section div.box {
+	margin: 1em auto;
+}
+
 #server div.container div.row section{
  margin-bottom: 1em;
 }

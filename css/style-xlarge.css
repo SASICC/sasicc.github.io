@@ -1,4 +1,20 @@
 
-	body, input, select, textarea {
-		font-size: 13pt;
-	}
+body, input, select, textarea {
+	font-size: 13pt;
+}
+
+.wrapper.white section div.box{
+	height: 488px;
+}
+
+.owl-carousel .owl-item{
+	width: 100% !important;
+}
+
+.owl-carousel .item{
+	width: 100%;
+}
+
+.owl-wrapper {
+	width: auto !important;
+}
