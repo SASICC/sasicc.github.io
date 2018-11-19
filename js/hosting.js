@@ -1,23 +1,5 @@
 jQuery(function ($) { "use strict";
 
-/* ========================================================================= */
-/*	Page Preloader
-/* ========================================================================= */
-
-
-jQuery(window).scroll(function () {
-  var top = jQuery(document).scrollTop();
-  var height = 700;
-  //alert(batas);
-
-  if (top > height) {
-  jQuery('.navbar').addClass('menu-scroll');
-  } else {
-   jQuery('.navbar').removeClass('menu-scroll');
-  }
-});
-
-
 /* Home Slideshow Vegas
  -----------------------------------------------*/
 $(function() {
@@ -35,10 +17,6 @@ $(function() {
    });
 
  });
-
-
- /* Team carousel
-   -----------------------------------------------*/
 
 
 /*
