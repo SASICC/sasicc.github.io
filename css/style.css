@@ -1000,6 +1000,9 @@ img{
 
 .hover-mask ul li span {
 	font-size: 8px;
+}
+
+.hover-mask ul li span i {
 	color: #ffffff;
 }
 
