@@ -981,10 +981,11 @@ img{
 }
 
 .hover-mask ul {
-	left: 25%;
-	top: 65%;
+	left: 0%;
+	top: 72%;
 	width: 100%;
 	position: absolute;
+	text-align: center;
 }
 
 .hover-mask ul li {
