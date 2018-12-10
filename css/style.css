@@ -197,7 +197,7 @@ body.landing #header {
 /* ********************************************************** */
 
 #loading-mask {
-	background: #333439;
+	background: #fff;
 	height: 100%;
 	left: 0;
 	opacity: 1;
