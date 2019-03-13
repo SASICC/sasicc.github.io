@@ -563,7 +563,7 @@ img{
 /* Contenedor gris que es el secundario */
 
 .wrapper.gray  {
-	background-color: #e7e7e7;
+	background-color: #dadada;
 	border-bottom: 1px solid rgba(144, 144, 144, 0.25) ;
 }
 
@@ -800,106 +800,134 @@ img{
 }
 
 .portfolio-item-hb{
-	max-height: 790px;
+	max-height: 100em;
 	height: auto;
 	overflow: hidden;
 	padding-left: 4em;
 }
 
-.card {
-	background: none repeat scroll 0 0 #FFFFFF;
-	border-radius: 4px;
-	color: #444444;
-	margin-right: 1em;
-	-webkit-box-shadow: 9px 14px 20px 0px rgba(231,231,231,0.75);
-	-moz-box-shadow: 9px 14px 20px 0px rgba(231,231,231,0.75);
-	box-shadow: 9px 14px 20px 0px rgba(231,231,231,0.75);
+.about-team {
+    color: #035;
+    padding-bottom: 40px;
+
 }
 
-.card-container, .front, .back {
-	width: 100%;
-	height: auto;
-	min-height: auto;
-	margin: 0 0 1em 0;
-	border-radius: 4px;
+.about-team .title h1 {
+    color: #035;
 }
 
-.card .cover {
+.team-mate {
+	margin-left: 1em;
+	margin-bottom: 1em;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 10px 25px -10px rgba(0, 0, 0, 0.43)
+}
+
+.member-photo {
 	overflow: hidden;
-	border-radius: 4px 4px 0 0;
+	position: relative;
 }
 
-.card .cover img {
-	width: 100%;
-	height: 150px;
+.member-photo img {
+	-webkit-transition: all 0.6s ease 0s;
+	   -moz-transition: all 0.6s ease 0s;
+		 -o-transition: all 0.6s ease 0s;
+			transition: all 0.6s ease 0s;
 }
 
-.card .user {
-	border-radius: 50%;
-	display: block;
-	height: 120px;
-	margin: -55px auto 0;
-	overflow: hidden;
-	width: 120px;
+.member-photo:hover img {
+	-webkit-transform: scale(1.2);
+	   -moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		 -o-transform: scale(1.2);
+			transform: scale(1.2);
 }
 
-.card .user img {
-	background: none repeat scroll 0 0 #FFFFFF;
-	border: 4px solid #FFFFFF;
-	width: 100%;
-	border-radius: 100%;
+.member-title {
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	padding: 10px 15px;
 }
 
-.card .content {
-	background-color: rgba(0, 0, 0, 0);
-	box-shadow: none;
-	text-align: center;
+
+.member-photo .mask {
+    background-color: rgba(0, 50, 84, .76);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+	opacity: 0;
+	filter: alpha(opacity=0);
+
+	-webkit-transition: all 600ms ease-out 0s;
+	   -moz-transition: all 600ms ease-out 0s;
+		 -o-transition: all 600ms ease-out 0s;
+		    transition: all 600ms ease-out 0s;
+
+	-webkit-transform: rotateY(180deg) scale(0.5,0.5);
+	   -moz-transform: rotateY(180deg) scale(0.5,0.5);
+		-ms-transform: rotateY(180deg) scale(0.5,0.5);
+		 -o-transform: rotateY(180deg) scale(0.5,0.5);
+			transform: rotateY(180deg) scale(0.5,0.5);
+}
+
+.member-photo:hover .mask {
+    cursor: pointer;
+	opacity: 1;
+	filter: alpha(opacity=100);
+
+	-webkit-transform: rotateY(0deg) scale(1,1);
+	   -moz-transform: rotateY(0deg) scale(1,1);
+		-ms-transform: rotateY(0deg) scale(1,1);
+		 -o-transform: rotateY(0deg) scale(1,1);
+		    transform: rotateY(0deg) scale(1,1);
+}
+
+.team-mate h3 {
+	font-family: Ubuntu,sans-serif;
+	font-size: 20px;
+	margin: 0 0 5px;
 	color: #035;
-	padding-bottom: 1rem;
 }
 
-.card .content .main h4 {
+.team-mate span {
 	color: #035;
 }
 
-.card .content .main p {
-	padding-top: 0.5rem;
+.member-info {
+	padding: 15px;
 }
 
-.card .name {
-	font-size: 22px;
-	line-height: 28px;
-	margin: 10px 0 0;
-	color: #035;
-	text-align: center;
-	text-transform: capitalize;
+.mask ul {
+    text-align: center;
+    position: relative;
+    top: 125px;
 }
 
-.card h5{
-	margin: 5px 0;
-	font-weight: 400;
-	line-height: 20px;
+.mask ul li {
+    display: inline-block;
+    margin-right: 15px;
 }
 
-.card .profession{
-	color: #035;
-	text-align: center;
+.mask ul li a {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff ;
+		background-color: #FFF;
+		display: block;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 35px;
 }
 
-.card .footer {
-	border-top: 1px solid #EEEEEE;
-	color: #035;
-	margin: 30px 0 0;
-	padding: 10px 0 0;
-	text-align: center;
-}
-
-.card .footer .social-links{
-	font-size: 18px;
-}
-
-.card .footer .social-links a{
-	margin: 0 7px;
+.mask ul li a:hover  {
+		color: #fff !important;
+    border: 1px solid transparent;
 }
 
 
