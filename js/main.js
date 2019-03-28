@@ -34,28 +34,7 @@
          animation: ['kenburns']
      });
 
-		 var owl = 	$('.owl-carousel').owlCarousel({
- 				items: 1,
- 		    loop: true,
- 		    margin: 0,
- 		    responsiveClass: true,
- 		    nav: true,
- 		    dots: true,
- 		    autoHeight: true,
- 		    smartSpeed: 500,
- 		    autoPlay: true,
- 				autoPayTimeout: 1000,
- 				autoPlayHoverPause: true,
- 		    navText: [
- 		      "<i class='icon-arrow-left2 owl-direction'></i>",
- 		      "<i class='icon-arrow-right2 owl-direction'></i>"
- 	     	]
- 		});
    });
-
-
-	 /* Team carousel
-	   -----------------------------------------------*/
 
 
 /*
