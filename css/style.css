@@ -6,6 +6,7 @@ body, input, select, textarea {
 	font-size: 15pt;
 	font-weight: 300;
 	line-height: 1.65em;
+	z-index: 1;
 }
 
 a {
@@ -184,6 +185,11 @@ header.major p {
 }
 
 /* Header */
+body.landing {
+	z-index: 1;
+	background-color: "#FFF";
+}
+
 
 body.landing #header {
 	background: linear-gradient(rgba(38, 38, 38, 0.58), rgba(38, 38, 38, 0.58));
@@ -206,7 +212,7 @@ body.landing #header {
 	text-align: center;
 	top: 0;
 	width: 100%;
-	z-index: 999999999;
+	z-index: 9999999;
 }
 
 .loading-img {
@@ -244,7 +250,6 @@ body.landing #header {
 	min-height: 100%;
 	left: 0;
 	top: 0;
-	z-index: 11;
 }
 
 
@@ -312,7 +317,6 @@ img{
 		color: #202222;
 		cursor: default;
 		width: 100%;
-		z-index: 10000;
 		border-bottom:  1px solid #e7e7e7;
 	}
 
@@ -323,7 +327,6 @@ img{
 			color: #202222;
 			cursor: default;
 			width: 100%;
-			z-index: 10000;
 			border-bottom:  1px solid #e7e7e7;
 		}
 
@@ -335,8 +338,8 @@ img{
 						top: 0;
 						left: 0;
 						right: 0;
-						z-index: 300;
 						height:3em;
+						z-index: 1;
 				}
 
 					header.navbar div.navbar-header, header.nav-fixed div.navbar-header {
