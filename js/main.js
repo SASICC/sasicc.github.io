@@ -21,18 +21,30 @@
 	/* Home Slideshow Vegas
    -----------------------------------------------*/
   $(function() {
+
+		$('.slide').slide({
+          'slideSpeed': 5000,
+          'isShowArrow': true,
+          'dotsEvent': 'mouseenter',
+          'isLoadAllImgs': true,
+					'isAutoSlide': true,
+
+        });
+
      $('body').vegas({
          slides: [
              { src: './img/body/img-body-1.jpg' },
-             { src: './img/body/img-body-2.jpg' },
+             /*{ src: './img/body/img-body-2.jpg' },
 						 { src: './img/body/img-body-3.jpeg' },
 						 { src: './img/body/img-body-4.jpg' },
-						 { src: './img/body/img-body-5.jpg' }
+						 { src: './img/body/img-body-5.jpg' }*/
          ],
          timer: false,
          transition: [ 'zoomIn', ],
          animation: ['kenburns']
      });
+
+
 });
 
 
