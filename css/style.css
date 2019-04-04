@@ -257,25 +257,11 @@ img{
 	max-width: 100%;
 }
 
-.owl-carousel {
-	padding: 0.5em 0em 0.5em;
-	text-align: center;
-	display: table;
-	height: 100%;
-	width: 100%;
-	min-height: 100%;
-	left: 0;
-	top: 0;
 }
 
-.owl-carousel .item {
-	height: 40em;
-	position: relative;
-	padding: 15rem 0em 1em ;
 	margin: 0 auto;
 }
 
-.owl-carousel .item h3, h2, h1  {
 	color: #ffffff;
 	font-size: 2.5em;
 	line-height: 1em;
@@ -283,7 +269,6 @@ img{
 	padding: 0;
 }
 
-.owl-carousel .item p  {
 	width: 80%;
 	color: #ffffff;
 	font-size: 1.5em;
@@ -292,17 +277,14 @@ img{
 	padding: 0;
 }
 
-.owl-carousel .item .actions {
-	margin: 3em 0 0 0;
+.slide ul li .actions {
 }
 
-.owl-carousel .item .button {
 	background-color: transparent;
 	border: 1px solid #ffffff;
 	font-weight: 300;
 }
 
-.owl-carousel .item .button:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
