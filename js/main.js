@@ -21,41 +21,31 @@
 	/* Home Slideshow Vegas
    -----------------------------------------------*/
   $(function() {
+
+		$('.slide').slide({
+          'slideSpeed': 5000,
+          'isShowArrow': true,
+          'dotsEvent': 'mouseenter',
+          'isLoadAllImgs': true,
+					'isAutoSlide': true,
+
+        });
+
      $('body').vegas({
          slides: [
              { src: './img/body/img-body-1.jpg' },
-             { src: './img/body/img-body-2.jpg' },
+             /*{ src: './img/body/img-body-2.jpg' },
 						 { src: './img/body/img-body-3.jpeg' },
 						 { src: './img/body/img-body-4.jpg' },
-						 { src: './img/body/img-body-5.jpg' }
+						 { src: './img/body/img-body-5.jpg' }*/
          ],
          timer: false,
          transition: [ 'zoomIn', ],
          animation: ['kenburns']
      });
 
-		 var owl = 	$('.owl-carousel').owlCarousel({
- 				items: 1,
- 		    loop: true,
- 		    margin: 0,
- 		    responsiveClass: true,
- 		    nav: true,
- 		    dots: true,
- 		    autoHeight: true,
- 		    smartSpeed: 500,
- 		    autoPlay: true,
- 				autoPayTimeout: 1000,
- 				autoPlayHoverPause: true,
- 		    navText: [
- 		      "<i class='icon-arrow-left2 owl-direction'></i>",
- 		      "<i class='icon-arrow-right2 owl-direction'></i>"
- 	     	]
- 		});
-   });
 
-
-	 /* Team carousel
-	   -----------------------------------------------*/
+});
 
 
 /*
@@ -314,6 +304,8 @@
 
 	 var mixer1 = mixitup(containerEl1, config);
 	 var mixer1 = mixitup(containerEl2, config);
+
+
 
 
 });
