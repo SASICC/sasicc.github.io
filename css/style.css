@@ -389,6 +389,7 @@ img{
 		cursor: default;
 		width: 100%;
 		border-bottom:  1px solid #e7e7e7;
+
 	}
 
 		header.nav-fixed {
@@ -398,7 +399,7 @@ img{
 			color: #202222;
 			cursor: default;
 			width: 100%;
-			border-bottom:  1px solid #e7e7e7;
+			border-bottom:  1px solid #e7e7e7;		z-index: 1;
 		}
 
 				header.navbar.menu-scroll, header.nav-fixed.menu-scroll{
