@@ -633,6 +633,34 @@ img{
 	margin-top: 1em;
 	text-align: center;
 }
+/*wrapper.white section.feature div.content p*/
+.wrapper.white section.feature div.content h2  {
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	color: #003254;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase !important;
+	font-size: 2em;
+}
+
+.wrapper.white section.feature div.content p  {
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	color: #003254;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: none !important;
+	font-size: 0.9em;
+}
 
 
 /* Contenedor gris que es el secundario */
@@ -653,7 +681,7 @@ img{
 .wrapper.gray  header h2 {
 	direction: rtl;
 	color: #035;
-	font-size: 1em;
+	font-size: 2em;
 	font-style: normal;
 	font-weight: 300;
 	text-align: center;
@@ -706,7 +734,7 @@ img{
 	font-size: 1.5em;
 }
 
-.wrapper.gray section.feature  h3{
+.wrapper.gray section.feature  h3 {
 	-moz-transition: color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out;
 	-o-transition: color 0.2s ease-in-out;
@@ -740,7 +768,7 @@ img{
 
 }
 
-.wrapper.gray section.feature div.content {
+.wrapper.gray section.feature div.content, .wrapper.white section.feature div.content {
 	padding:1em;
 	width: 100%;
 }
