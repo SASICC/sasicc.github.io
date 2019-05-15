@@ -645,7 +645,7 @@ img{
 	display: inline-block;
 	text-decoration: none;
 	text-transform: uppercase !important;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 .wrapper.white section.feature div.content p  {
