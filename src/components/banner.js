@@ -1,5 +1,4 @@
 import * as React from "react";
-import StyleBanner from  '../styles/components/banner.less'
 import UseTextos from '../hooks/useTextos'
 
 const Banner = () => {

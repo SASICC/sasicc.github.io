@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Styles from '../styles/components/navbar.less'
 import UseMenu from '../hooks/useMenu'
 
 const NavBar = () => {
