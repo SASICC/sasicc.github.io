@@ -24,7 +24,8 @@ module.exports = {
                     'portafolio', 
                     'menu', 
                     'textos', 
-                    'nosotros'
+                    'nosotros', 
+                    'servicios'
                 ]
             }
         }
