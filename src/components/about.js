@@ -8,20 +8,20 @@ export default function WrapperAbout(_id) {
   const {titulo, descripcion} = TextosAbout
  
   return (
-        <section id="Nosotros" className="wrapper white">
+        <section id="nosotros" className="wrapper white">
           <div className="container">
-          <header className="wow fadeInDown animated">
-            <h2>{titulo}</h2>
-            <p>{descripcion}.</p>
-          </header>
-          <div className="row">
-            {
-              ABOUT_DATA.map(data=> {
-                return <IconDiamond {...data} />
-              })
-            }
+            <header className="wow fadeInDown animated">
+              <h2>{titulo}</h2> 
+              <p>{descripcion}.</p>
+            </header> 
+            <div className="row">
+              {
+                ABOUT_DATA.map((data, i)=> {
+                  return <IconDiamond key={i} {...data} />
+                })
+              }
             </div>
-        </div>
+          </div>
       </section>
     )
 }
