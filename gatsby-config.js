@@ -25,8 +25,7 @@ module.exports = {
                     'menu', 
                     'textos', 
                     'nosotros', 
-                    'servicios', 
-                    'equipo-trabajo'
+                    'servicios'
                 ]
             }
         }
