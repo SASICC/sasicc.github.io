@@ -26,7 +26,8 @@ module.exports = {
                     'textos', 
                     'nosotros', 
                     'servicios', 
-                    'equipo-trabajo'
+                    'equipo-trabajo', 
+                    'tipo-proyecto'
                 ]
             }
         }
