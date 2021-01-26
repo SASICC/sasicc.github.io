@@ -3,7 +3,7 @@ import {graphql, useStaticQuery} from 'gatsby'
 import UseCargo from '../hooks/useCargos'
 import Profile from '../reusable/profile'
 import UseEquipoTrabajo from '../hooks/useEquipoTrabajo'
-import UseTextos from '../hooks/useTextos'
+import PortafolioFilter from '../reusable/portfolioFilter'
 
 export default function WrapperTeam() {
   const { TextosEquipo } = useStaticQuery(GET_CARGOSDATA)
@@ -12,44 +12,28 @@ export default function WrapperTeam() {
   const useEquipoTrabajo = UseEquipoTrabajo()
   let DataStructure = []
   for (let i = 0; i < 5; i++) {
-    DataStructure = useEquipoTrabajo.reduce((memo, data) => {
-      console.log(); 
+    DataStructure = useEquipoTrabajo.reduce((memo, data) => { 
       memo[i % 2].push({...data});
       return memo
     }, [[],[]])
-    
   }
-  return (
-        <section id="equipo" className="wrapper white">
-          <div className="container">
+  return (<section id="equipo" className="wrapper white">
+        <div className="container">
             <header className="wow fadeInDown animated">
               <h2>{titulo}</h2>
               <p>{descripcion}.</p>
             </header>
-            <div className="row">
-              <div className="12u$ portfolio"> 
-                <div className="portfolio-filter">
-                  <ul className="text-center">
-                    <li key='all'><a  key='all'>Todos</a></li>
-                    {
-                      useCargo.map(({key, nombre})=> {
-                        return <li key={key}><a>{nombre}</a></li>
-                      })
-                    }
-                  </ul>
-                </div>
-              </div>
-					  </div>
+            <PortafolioFilter data={useCargo} />
             <div>
-            {
-              DataStructure.map((row, i) => {
-                return <div key={i} className="row">
-                  {row.map((data, j) => {
-                    return  <Profile {...data} />
-                  })}
-                </div>
-              })
-            }
+              {
+                DataStructure.map((row, i) => {
+                  return <div key={i} className="row">
+                    {row.map((data, j) => {
+                      return  <Profile {...data} />
+                    })}
+                  </div>
+                })
+              }
             </div>
           </div>
       </section>
