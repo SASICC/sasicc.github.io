@@ -6,6 +6,7 @@ import NavBar from '../components/navbar'
 import About from '../components/about'
 import Services from '../components/services';
 import Team from '../components/team'
+import Portafolio from '../components/portfolio'
 
 export default function IndexPage( ){
   return (
@@ -24,6 +25,8 @@ export default function IndexPage( ){
       <About />
       <Services />
       <Team /> 
+      <Portafolio />
+      
       <script src="../js/init.js"></script> 
     </main>
   )
