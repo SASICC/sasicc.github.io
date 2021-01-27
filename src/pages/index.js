@@ -7,6 +7,8 @@ import About from '../components/about'
 import Services from '../components/services';
 import Team from '../components/team'
 import Portafolio from '../components/portfolio'
+import Footer from '../components/footer';
+
 
 export default function IndexPage( ){
   return (
@@ -18,7 +20,7 @@ export default function IndexPage( ){
 	      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js" integrity="sha512-LpUt6fJuTMm3o0q5w8ydMXpGho2tqAoaRu6MP6Tt0X0Klct8xlToutBk7Wh51RL9n7/QSplQnrUA1U3S5YzMng==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../styles/skel.css" />
       </Helmet>
       <Banner />
       <NavBar />  
@@ -26,8 +28,7 @@ export default function IndexPage( ){
       <Services />
       <Team /> 
       <Portafolio />
-      
-      <script src="../js/init.js"></script> 
+      <Footer />
     </main>
   )
 }
