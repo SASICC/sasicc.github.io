@@ -2,7 +2,10 @@ import {graphql, useStaticQuery} from 'gatsby'
 
 export default function usePortafolio() {
   const { DataPortafolio } = useStaticQuery(GET_PORTAFOLIO)
-  return DataPortafolio.nodes.map(node =>{ return {...node, imagen: node.imagen.publicURL}})
+  return DataPortafolio.nodes.map(node =>{ return {...node, 
+    imagen: node.imagen.publicURL, 
+    tipo_proyectos: node.tipo_proyectos.map(({nombre})=>nombre )
+    }})
 }
 
 const GET_PORTAFOLIO =  graphql`
