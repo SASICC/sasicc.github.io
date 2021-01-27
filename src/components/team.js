@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState }  from 'react';
 import {graphql, useStaticQuery} from 'gatsby'
 import UseCargo from '../hooks/useCargos'
 import Profile from '../reusable/profile'
@@ -10,9 +10,17 @@ export default function WrapperTeam() {
   const useCargo = UseCargo()
   const {titulo, descripcion} = TextosEquipo
   const useEquipoTrabajo = UseEquipoTrabajo()
+
+  const [useFilter, setFilter] = useState('all')
+
+  const onChange = (nombre) => {
+    setFilter(nombre)
+  }
+
   let DataStructure = []
   for (let i = 0; i < 5; i++) {
     DataStructure = useEquipoTrabajo.reduce((memo, data) => { 
+      if (useFilter != 'all' && !data.cargos.includes(useFilter)) return memo
       memo[i % 2].push({...data});
       return memo
     }, [[],[]])
@@ -23,7 +31,7 @@ export default function WrapperTeam() {
               <h2>{titulo}</h2>
               <p>{descripcion}.</p>
             </header>
-            <PortafolioFilter data={useCargo} />
+            <PortafolioFilter onChange={onChange} data={useCargo} />
             <div>
               {
                 DataStructure.map((row, i) => {
@@ -34,6 +42,9 @@ export default function WrapperTeam() {
                   </div>
                 })
               }
+            </div>
+            <div className="actions">
+              <a className="button button-blue">Leer mas</a>
             </div>
           </div>
       </section>
