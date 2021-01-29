@@ -6,10 +6,9 @@
 @import './components/navbar.less';
 @import './components/box.less';
 @import './components/botton.less'; 
-@import './skeleton/skeleton.less';
-@import './skeleton/normalize.less';
 @import './components/portfolio.less';
-@import './components/profile.less'; 
+@import './components/profile.less';
+@import './skel.less'; 
 
 
 /* Basic */
@@ -23,12 +22,6 @@ body, input, select, textarea {
 	margin: 0;
 	padding: 0;
 	
-}
-body{
-	background-image: url('../images/img-body-1.jpg');
-	background-position: center;
-	background-size: auto, cover;
-	background-attachment: scroll, fixed;
 }
 
 a {
@@ -82,10 +75,14 @@ img {
     margin-right: auto;
     width: 1200px
 }
+
 .wrapper {
 	padding: 3em 0em 3em;
 	.row {
 		display: flex;
+		article {
+			padding: 0;
+		}
 	}
 }
 
@@ -116,18 +113,12 @@ img {
 			letter-spacing: 3px;
 			text-transform: uppercase;
 		}
-		
-		
-
-		
 	}
 	div.row  {
 		section i{
-			height: 92.38px;
-			width: 150px;
-		}
-
-		
+			height: 99px;
+			width: 159px;
+		}		
 	}
 	.feature {
 		margin: 0 0 2em 0;
@@ -163,6 +154,7 @@ img {
 	.title {
 		padding-bottom: 0.5em;
 	}
+	
 }
 
 .scrollbars{

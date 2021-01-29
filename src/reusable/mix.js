@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class Profile extends PureComponent {
     render() {
         const  {id ,strapiId, link, imagen, nombre, descripcion } = this.props
-        return (<div key={`${id}-${strapiId}`} className="mix ">
+        return (<article key={`${id}-${strapiId}`} className="mix ">
         <a href={link} target="_blank" data-largesrc={link} data-title={descripcion} >
           <img src={imagen} alt={nombre} />
           <div className="hover-mask">
@@ -12,7 +12,7 @@ class Profile extends PureComponent {
             <p>{descripcion} </p>
           </div>
         </a>
-    </div>
+    </article>
         );
     }
 }   

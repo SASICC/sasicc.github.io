@@ -4,9 +4,9 @@ import { Global } from './style';
 
 export const Layout = ({ children, bodyImg }) => {
   return (
-    <Scrollbars className='scrollbars'  >
+    <div className='scrollbars'  >
       <Global backgroundImage={bodyImg}  />
         {children}
-    </Scrollbars>
+    </div>
   );
 };

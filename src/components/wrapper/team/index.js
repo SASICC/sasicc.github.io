@@ -1,11 +1,11 @@
 import React, { useState }  from 'react';
 import {graphql, useStaticQuery} from 'gatsby'
-import UseCargo from '../hooks/useCargos'
-import Profile from '../reusable/profile'
-import UseEquipoTrabajo from '../hooks/useEquipoTrabajo'
-import PortafolioFilter from '../reusable/portfolioFilter'
+import UseCargo from '../../../hooks/useCargos'
+import Profile from '../../../reusable/profile'
+import UseEquipoTrabajo from '../../../hooks/useEquipoTrabajo'
+import PortafolioFilter from '../../../reusable/portfolioFilter'
 
-export default function WrapperTeam() {
+export const WrapperTeam = () => {
   const { TextosEquipo } = useStaticQuery(GET_CARGOSDATA)
   const useCargo = UseCargo()
   const {titulo, descripcion} = TextosEquipo
@@ -35,7 +35,7 @@ export default function WrapperTeam() {
             <div>
               {
                 DataStructure.map((row, i) => {
-                  return <div key={i} className="row">
+                  return <div key={i} className="row" style= {{padding: 0}}>
                     {row.map((data, j) => {
                       return  <Profile {...data} />
                     })}

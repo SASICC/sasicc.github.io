@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {graphql, useStaticQuery} from 'gatsby'
-import IconDiamond from '../reusable/iconDiamond'
+import IconDiamond from '../../../reusable/iconDiamond'
 
-export default function WrapperServices(_id) {
+export const WrapperServices = () => {
   const { DataServicios, TextosServicio } = useStaticQuery(GET_SERVICIOSDATA)
   const SERVICIOS_DATA = DataServicios.edges.map(({node}) =>{ return {...node}  })
   const {titulo, descripcion} = TextosServicio
