@@ -1,11 +1,11 @@
 import  React, { useState }  from 'react';
 import {graphql, useStaticQuery} from 'gatsby'
 // use hooks 
-import UseTipoProyecto from '../../../hooks/useTipoProyecto'
-import UsePortfolio from  '../../../hooks/usePortfolio'
+import UseTipoProyecto from '../../../../hooks/useTipoProyecto'
+import UsePortfolio from  '../../../../hooks/usePortfolio'
 // reusable
-import PortafolioFilter from '../../../reusable/portfolioFilter'
-import Mix from '../../../reusable/mix'
+import PortafolioFilter from '../../../../reusable/portfolioFilter'
+import Mix from '../../../../reusable/mix'
 
 export const  WrapperPortafolio = () => {
   // GraphQL Query

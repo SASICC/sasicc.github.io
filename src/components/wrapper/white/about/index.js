@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {graphql, useStaticQuery} from 'gatsby'
-import IconDiamond from '../../../reusable/iconDiamond'
+import IconDiamond from '../../../../reusable/iconDiamond'
 
 export const About = () => {
   const { DataAbout, TextosAbout } = useStaticQuery(GET_ABOUTDATA)
@@ -24,15 +24,6 @@ export const About = () => {
     </section>
     )
 }
-
-/*<div className="row">
-              {
-                ABOUT_DATA.map((data, i)=> {
-                  return <IconDiamond key={i} {...data} />
-                })
-              }
-            </div>*/ 
-
 
 const GET_ABOUTDATA=  graphql`
 query {

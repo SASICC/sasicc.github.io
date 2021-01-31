@@ -1,9 +1,9 @@
 import React, { useState }  from 'react';
 import {graphql, useStaticQuery} from 'gatsby'
-import UseCargo from '../../../hooks/useCargos'
-import Profile from '../../../reusable/profile'
-import UseEquipoTrabajo from '../../../hooks/useEquipoTrabajo'
-import PortafolioFilter from '../../../reusable/portfolioFilter'
+import UseCargo from '../../../../hooks/useCargos'
+import Profile from '../../../../reusable/profile'
+import UseEquipoTrabajo from '../../../../hooks/useEquipoTrabajo'
+import PortafolioFilter from '../../../../reusable/portfolioFilter'
 
 export const WrapperTeam = () => {
   const { TextosEquipo } = useStaticQuery(GET_CARGOSDATA)

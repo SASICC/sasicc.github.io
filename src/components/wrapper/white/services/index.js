@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {graphql, useStaticQuery} from 'gatsby'
-import IconDiamond from '../../../reusable/iconDiamond'
+import IconDiamond from '../../../../reusable/iconDiamond'
 
 export const WrapperServices = () => {
   const { DataServicios, TextosServicio } = useStaticQuery(GET_SERVICIOSDATA)
