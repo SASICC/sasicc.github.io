@@ -11,7 +11,6 @@ export default function IndexPage( ){
       <NavBar />
       <About />
       <WrapperServices />
-      <WrapperTeam />
       <WrapperPortafolio />
     </Layout>
   )
