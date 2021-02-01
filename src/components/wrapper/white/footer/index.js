@@ -1,6 +1,7 @@
 import  React  from 'react';
 
-export default function WrapperPortafolio(_id) {
+
+export const  WrapperFooter = () => {
   
   return (<section id="footer" className="wrapper white" >
             <div className="container">
@@ -9,13 +10,13 @@ export default function WrapperPortafolio(_id) {
                 <p></p>
                 </header>
                 <div className="row">
-                <section className="six 12u$(small) fadeInLeft animated" >
+                <section className="six columns  fadeInLeft animated" >
                     <i className="fa fa-phone fa-2x"></i>
                     <div className="content text-center">
                     <p className="text-align">Celular: 318-536-1601</p>
                     </div>
                 </section>
-                <section className="six 12u$(small) wow fadeInRight animate">
+                <section className="six columns fadeInRight animate">
                     <i className="fa fa fa-envelope fa-2x"></i>
                     <div className="content">
                     <p className="text-align">infosasicc@gmail.com</p>
@@ -24,6 +25,6 @@ export default function WrapperPortafolio(_id) {
 
                 </div>
             </div>
-            </section>
+        </section>
     )
 }
