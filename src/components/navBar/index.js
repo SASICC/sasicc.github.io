@@ -1,12 +1,27 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import UseMenu from '../../hooks/useMenu'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export const NavBar = () => {
+	const [scrolled, setScrolled ]= useState(false);
 	const USEMENU = UseMenu()
-    return(<header className="navbar" >
+	
+	const handleScroll=() => {
+	const offset = window.scrollY;
+		if ( offset > 700 ) setScrolled(true);
+		else setScrolled(false);
+	}
+	useEffect(() => {
+		window.addEventListener( 'scroll', handleScroll )
+	})
+
+	let navFixed = 'navbar';
+
+	if(scrolled)  navFixed = 'navbar nav-fixed'
+
+    return(<header className={`${navFixed}`} >
 			<div className="navbar-header">
-				<a className="navbar-title" href="#">SASICC</a>
+				<a className="navbar-title" href="#banner">SASICC</a>
 			</div>
 			<nav id="nav">
 				<ul>
