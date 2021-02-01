@@ -10,14 +10,14 @@ export const  WrapperGrayTwo = () => {
   return ( <section  className="wrapper gray">
         <div className="container"> 
             <div className="row" style={{display: 'flex'}} >
-                <section class="feature six columns fadeInRight animated">
-                    <div class="content">
+                <section className="feature six columns fadeInRight animated">
+                    <div className="content">
                         <h2>{titulo}</h2>
                         <p>{descripcion}</p>
                     </div>
                 </section>
-                <section class="feature  six columns fadeInLeft animated">
-                    <img key={Imagen?.id} src={Imagen?.sizes?.src} class="img" />
+                <section className="feature  six columns fadeInLeft animated">
+                    <img key={Imagen?.id} src={imgen} alt={titulo} className="img right" />
                 </section>
                 
             </div>
@@ -32,12 +32,5 @@ query {
     id
     titulo
     descripcion
-  }
-  Imagen : imageSharp(sizes: {originalName: {eq: "experiencia.svg"}}) {
-    id
-    sizes {
-      src
-      originalName
-    }
   }
 }`;
