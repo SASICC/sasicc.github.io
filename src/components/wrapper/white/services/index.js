@@ -26,7 +26,7 @@ export const WrapperServices = () => {
                     return <section key={j} className="4u 6u(medium) 12u$(small) fadeInRight animated">
                       <div className="box">
                         <IconDiamond {...data} />
-                        <a href="hosting.html" className="button button-blue">Leer mas</a>
+                        <a href="hosting.html" rel="noopener noreferrer" className="button button-blue">Leer mas</a>
                       </div>
                   </section>
                   })}

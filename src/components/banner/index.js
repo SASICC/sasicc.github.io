@@ -8,7 +8,7 @@ export const Banner = () => {
       <h3 className="zoomIn animated">{titulo}</h3>
         <p>{descripcion}</p>
         <div className="actions">
-            <a href="#Servicio" className="bottton">Leer mas</a>
+            <a href="#servicio" className="bottton">Leer mas</a>
         </div>
     </div>
   </section>

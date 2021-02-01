@@ -24,7 +24,7 @@ export const  WrapperPortafolio = () => {
   let DataStructure = []
   for (let i = 0; i < 5; i++) {
     DataStructure = usePortfolio.reduce((memo, data) => { 
-      if (useFilter != 'all' && !data.tipo_proyectos.includes(useFilter)) return memo
+      if (useFilter !== 'all' && !data.tipo_proyectos.includes(useFilter)) return memo
       memo[i % 2].push({...data});
       return memo
     }, [[],[]])
@@ -48,9 +48,9 @@ export const  WrapperPortafolio = () => {
                   })
                 }
             </div>
-            <div className="actions">
-              <a className="button button-blue">Leer mas</a>
-            </div>
+            {/*<div className="actions">
+              <a  className="button button-blue">Leer mas</a>
+              </div>*/}
         </div>
       </section>
     )

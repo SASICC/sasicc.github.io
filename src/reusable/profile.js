@@ -26,7 +26,7 @@ class Profile extends PureComponent {
             <ul className="clearfix">
                 {   
                     redes.map(({nombre, link, icono}, i)=>{
-                        return <li key={`${nombre}-${i}`}><a href={link} target="_blank"> <i className={`fab  ${icono}`}></i></a></li>
+                        return <li key={`${nombre}-${i}`}><a href={link} target="_blank" rel="noopener noreferrer"> <i className={`fab  ${icono}`}></i></a></li>
                     })
                 }
             </ul>

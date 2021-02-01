@@ -20,7 +20,7 @@ export const WrapperTeam = () => {
   let DataStructure = []
   for (let i = 0; i < 5; i++) {
     DataStructure = useEquipoTrabajo.reduce((memo, data) => { 
-      if (useFilter != 'all' && !data.cargos.includes(useFilter)) return memo
+      if (useFilter !== 'all' && !data.cargos.includes(useFilter)) return memo
       memo[i % 2].push({...data});
       return memo
     }, [[],[]])
@@ -43,9 +43,9 @@ export const WrapperTeam = () => {
                 })
               }
             </div>
-            <div className="actions">
+            {/*<div className="actions">
               <a className="button button-blue">Leer mas</a>
-            </div>
+            </div>*/}
           </div>
       </section>
     )
