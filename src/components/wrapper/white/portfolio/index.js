@@ -42,7 +42,7 @@ export const  WrapperPortafolio = () => {
                   DataStructure.map((row, i) => {
                     return <div key={i} className="row">
                       {row.map((data, j) => {
-                        return  <Mix {...data} />
+                        return  <Mix key={j} {...data} />
                       })}
                     </div>
                   })
