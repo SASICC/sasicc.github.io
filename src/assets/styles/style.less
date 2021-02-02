@@ -84,6 +84,7 @@ img {
 			padding: 0;
 		}
 	}
+	
 }
 
 .wrapper.white  {
@@ -185,7 +186,6 @@ img {
 	}	
 }
 
-
 .wrapper.gray  {
 	background-color: #dadada;
 	border-bottom: 1px solid rgba(144, 144, 144, 0.25) ;
@@ -219,6 +219,10 @@ img {
 		margin: 1em 0 0 0;
 		text-align: center;
 		color: rgba(0, 50, 84, .76);
+		.img  {
+			border-bottom: 0px;
+			border-top: 0px;
+		}
 		.img.left {
 			height: auto;
 		}
@@ -274,6 +278,49 @@ img {
 	}
 }
 
+.wrapper.img  {
+	border-bottom: 4px solid #035;
+	border-top:4px solid #035;
+	.container  {
+		padding: 2em;
+		h2 {
+			direction: rtl;
+			color: #FFF;
+			font-size: 1.5em;
+			font-style: normal;
+			font-weight: 300;
+			text-align: center;
+			letter-spacing: 5px;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+		p {
+			margin-top: 2em;
+			margin-right: auto;
+			margin-left: auto;
+			-moz-transition: color 0.2s ease-in-out;
+			-webkit-transition: color 0.2s ease-in-out;
+			-o-transition: color 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out;
+			color: #FFF;
+			text-align: center;
+			display:block;
+			text-decoration: none;
+			text-transform: uppercase !important;
+			font-size: 1.5em;
+		}
+	}
+}
+
+.wrapper.one {
+	background-image: -webkit-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
+	background-image: -o-linear-gradient(right, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
+	background-image: linear-gradient(to left, rgba(0, 50, 84, .76), rgba(0, 50, 84, .58));
+	background-position: 0px 0px, 50% 50%;
+	background-size: auto, cover;
+	background-attachment: scroll, fixed;
+}
 .scrollbars{
 	position:absolute !important;
 }
@@ -281,3 +328,40 @@ img {
 #footer {
 	text-align: center;
 }
+
+.error-page {
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+	color: #67757c;
+	text-align: center;
+  }
+  
+  .error-box {
+	  height: 100%;
+	  position: fixed;
+	  width: 100%;
+  }
+  
+  .error-body {
+	  left: 0;
+	  position: absolute;
+	  right: 0;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  h1 {
+		font-size: 150px;
+		font-weight: 900;
+		line-height: 210px;
+		color: #444c67;
+	}
+  }
+
+  .text-uppercase {
+	  text-transform: uppercase!important;
+  }
+  
+  .text-muted {
+	  color: #99abb4 !important;
+  }
