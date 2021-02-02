@@ -14,3 +14,8 @@ export * from './wrapper/white/footer'
 export * from './wrapper/gray/one'
 export * from './wrapper/gray/two'
 export * from './wrapper/gray/three'
+
+
+// wrapper blue 
+
+export * from './wrapper/blue'
